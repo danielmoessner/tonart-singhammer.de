@@ -13,14 +13,11 @@ import {
   PencilAltIcon,
   QuestionMarkCircleIcon,
   ReplyIcon,
-  SparklesIcon,
   TrashIcon,
   UsersIcon,
   XIcon,
-  UserIcon,
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
-import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
 function index({ data }) {

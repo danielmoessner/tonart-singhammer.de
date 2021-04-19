@@ -32,7 +32,7 @@ export default Page;
 
 export const query = graphql`
   {
-    pagesYaml(slug: { eq: "events" }) {
+    pagesYaml(slug: { eq: "event" }) {
       meta {
         image {
           childImageSharp {
