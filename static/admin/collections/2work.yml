@@ -1,0 +1,35 @@
+# See https://www.netlifycms.org/docs/collection-types/
+collections:
+  - name: technique
+    label: Töpfertechniken
+    label_singular: Töpfertechnik
+    folder: content/technique
+    slug: '{{fields.slug}}'
+    editor:
+      preview: false
+    extension: yml
+    create: true
+    fields:
+      - { label: Sammlung, name: collection, widget: hidden, default: technique }
+      - { label: Titel, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+  - name: work
+    label: Tonarbeiten
+    label_singular: Tonarbeit
+    folder: content/work
+    slug: '{{fields.slug}}'
+    editor:
+      preview: false
+    extension: yml
+    create: true
+    fields:
+      - { label: Sammlung, name: collection, widget: hidden, default: work }
+      - { label: Titel, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Bild, name: image, widget: image }
+      - label: Technik
+        name: technique
+        widget: relation
+        collection: technique
+        search_fields: ["title"]
+        value_field: "slug"

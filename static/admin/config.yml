@@ -1,28 +1,3 @@
-# See https://www.netlifycms.org/docs/configuration-options/#backend
-backend:
-  name: git-gateway
-  branch: main
-  repo: danielmoessner/gatsby-netlifycms.tortuga-webdesign.de
-
-# See https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
-local_backend: true
-
-# See https://www.netlifycms.org/docs/configuration-options/#locale
-locale: de
-
-# See https://www.netlifycms.org/docs/configuration-options/#display-url
-display_url: https://gatsby-netlifycms.tortuga-webdesign.de
-
-# See https://www.netlifycms.org/docs/configuration-options/#site-url
-site_url: https://gatsby-netlifycms.tortuga-webdesign.de
-
-# See https://www.netlifycms.org/docs/configuration-options/#media-folder
-media_folder: /content/media
-
-# See https://www.netlifycms.org/docs/configuration-options/#public-folder
-public_folder: ../media
-
-# See https://www.netlifycms.org/docs/collection-types/
 collections:
   - name: page
     label: Seiten
@@ -35,34 +10,372 @@ collections:
         label: Startseite
         name: home
         fields:
-          - { label: Sammlung, name: collection, widget: hidden, default: page }
-          - { label: Slug, name: slug, widget: hidden, default: home }
-          - label: 'Meta'
-            name: 'meta'
-            widget: 'object'
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: home
+          - label: Meta
+            name: meta
+            widget: object
             fields:
-              - { label: Titel, name: title, widget: string }
+              - label: Titel
+                name: title
+                widget: string
               - label: Beschreibung
                 name: description
                 widget: text
-              - { label: Bild, name: image, widget: image }
-
+              - label: Bild
+                name: image
+                widget: image
+      - file: content/pages/about.yml
+        label: Über mich
+        name: about
+        fields:
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: about
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Beschreibung
+                name: description
+                widget: text
+              - label: Bild
+                name: image
+                widget: image
+      - file: content/pages/work.yml
+        label: Tonarbeiten
+        name: work
+        fields:
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: work
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Beschreibung
+                name: description
+                widget: text
+              - label: Bild
+                name: image
+                widget: image
+      - file: content/pages/order.yml
+        label: Auftragsarbeiten
+        name: order
+        fields:
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: order
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Beschreibung
+                name: description
+                widget: text
+              - label: Bild
+                name: image
+                widget: image
+      - file: content/pages/event.yml
+        label: Veranstaltungen
+        name: event
+        fields:
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: event
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Beschreibung
+                name: description
+                widget: text
+              - label: Bild
+                name: image
+                widget: image
+      - file: content/pages/technique.yml
+        label: Töpfertechniken
+        name: technique
+        fields:
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: technique
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Beschreibung
+                name: description
+                widget: text
+              - label: Bild
+                name: image
+                widget: image
+      - file: content/pages/contact.yml
+        label: Kontakt
+        name: contact
+        fields:
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: contact
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Beschreibung
+                name: description
+                widget: text
+              - label: Bild
+                name: image
+                widget: image
+      - file: content/pages/imprint.md
+        label: Impressum
+        name: imprint
+        fields:
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: imprint
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Beschreibung
+                name: description
+                widget: text
+              - label: Bild
+                name: image
+                widget: image
+          - label: Inhalt
+            name: body
+            widget: markdown
+      - file: content/pages/privacy.md
+        label: Datenschutz
+        name: privacy
+        fields:
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: privacy
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Beschreibung
+                name: description
+                widget: text
+              - label: Bild
+                name: image
+                widget: image
+          - label: Inhalt
+            name: body
+            widget: markdown
       - file: content/pages/styleguide.yml
         label: Styleguide
         name: styleguide
         fields:
-          - { label: Sammlung, name: collection, widget: hidden, default: page }
-          - { label: Slug, name: slug, widget: hidden, default: styleguide }
-          - label: 'Meta'
-            name: 'meta'
-            widget: 'object'
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: page
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: styleguide
+          - label: Meta
+            name: meta
+            widget: object
             fields:
-              - { label: Titel, name: title, widget: string }
+              - label: Titel
+                name: title
+                widget: string
               - label: Beschreibung
                 name: description
                 widget: text
-              - { label: Bild, name: image, widget: image }
-
+              - label: Bild
+                name: image
+                widget: image
+  - name: technique
+    label: Töpfertechniken
+    label_singular: Töpfertechnik
+    folder: content/technique
+    slug: '{{fields.slug}}'
+    editor:
+      preview: false
+    extension: yml
+    create: true
+    fields:
+      - label: Sammlung
+        name: collection
+        widget: hidden
+        default: technique
+      - label: Titel
+        name: title
+        widget: string
+      - label: Slug
+        name: slug
+        widget: string
+  - name: work
+    label: Tonarbeiten
+    label_singular: Tonarbeit
+    folder: content/work
+    slug: '{{fields.slug}}'
+    editor:
+      preview: false
+    extension: yml
+    create: true
+    fields:
+      - label: Sammlung
+        name: collection
+        widget: hidden
+        default: work
+      - label: Titel
+        name: title
+        widget: string
+      - label: Slug
+        name: slug
+        widget: string
+      - label: Bild
+        name: image
+        widget: image
+      - label: Technik
+        name: technique
+        widget: relation
+        collection: technique
+        search_fields:
+          - title
+        value_field: slug
+  - name: event
+    label: Veranstaltungen
+    label_singular: Veranstaltungen
+    editor:
+      preview: false
+    folder: content/event
+    slug: '{{fields.slug}}'
+    extension: yml
+    create: true
+    fields:
+      - label: Sammlung
+        name: collection
+        widget: hidden
+        default: event
+      - label: Titel
+        name: title
+        widget: string
+      - label: Slug
+        name: slug
+        widget: string
+      - label: Anfang
+        name: start
+        widget: datetime
+        date_format: DD.MM.YYYY
+        time_format: 'HH:mm'
+      - label: Ende
+        name: end
+        widget: datetime
+        date_format: DD.MM.YYYY
+        time_format: 'HH:mm'
+      - label: Beschreibung
+        name: description
+        widget: text
+  - name: setting
+    label: Einstellungen
+    label_singular: Einstellung
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: content/settings/global.yml
+        label: Global
+        name: global-settings
+        preview: false
+        fields:
+          - label: Sammlung
+            name: collection
+            widget: hidden
+            default: setting
+          - label: Slug
+            name: slug
+            widget: hidden
+            default: global
+          - label: Titel in der Navigation
+            name: navigationTitle
+            widget: string
+            default: Wildtiere
+          - label: URL der Seite
+            name: siteUrl
+            widget: string
+            required: false
+          - label: Favicon
+            name: favicon
+            widget: image
   - name: animal
     label: Wildtiere
     label_singular: Wildtier
@@ -71,21 +384,34 @@ collections:
     folder: content/animals
     slug: '{{fields.slug}}'
     create: true
-    preview_path: wildtiere/{{fields.slug}}
+    preview_path: 'wildtiere/{{fields.slug}}'
     fields:
-      - { label: Sammlung, name: collection, widget: hidden, default: animal }
-      - { label: Titel, name: title, widget: string }
-      - { label: Slug, name: slug, widget: string }
-      - { label: Bild, name: image, widget: image }
-      - { label: Auszug, name: excerpt, widget: text }
-      - { label: Inhalt, name: body, widget: markdown }
-      - label: 'Kategorie'
-        name: 'category'
-        widget: 'relation'
-        collection: 'category'
-        searchFields: ['title']
-        valueField: 'title'
-
+      - label: Sammlung
+        name: collection
+        widget: hidden
+        default: animal
+      - label: Titel
+        name: title
+        widget: string
+      - label: Slug
+        name: slug
+        widget: string
+      - label: Bild
+        name: image
+        widget: image
+      - label: Auszug
+        name: excerpt
+        widget: text
+      - label: Inhalt
+        name: body
+        widget: markdown
+      - label: Kategorie
+        name: category
+        widget: relation
+        collection: category
+        searchFields:
+          - title
+        valueField: title
   - name: category
     label: Kategorien
     label_singular: Kategorie
@@ -96,28 +422,20 @@ collections:
     slug: '{{slug}}'
     create: true
     fields:
-      - { label: Sammlung, name: collection, widget: hidden, default: category }
-      - { label: Titel, name: title, widget: string }
-
-  - name: 'setting'
-    label: Einstellungen
-    label_singular: Einstellung
-    delete: false
-    editor:
-      preview: false
-    files:
-      - file: 'content/settings/global.yml'
-        label: Global
-        name: 'global-settings'
-        preview: false
-        fields:
-          - { label: Sammlung, name: collection, widget: hidden, default: setting }
-          - { label: Slug, name: slug, widget: hidden, default: global }
-          - {
-              label: Titel in der Navigation,
-              name: navigationTitle,
-              widget: string,
-              default: Wildtiere,
-            }
-          - { label: URL der Seite, name: siteUrl, widget: string, required: false }
-          - { label: Favicon, name: favicon, widget: image }
+      - label: Sammlung
+        name: collection
+        widget: hidden
+        default: category
+      - label: Titel
+        name: title
+        widget: string
+backend:
+  name: git-gateway
+  branch: main
+  repo: danielmoessner/gatsby-netlifycms.tortuga-webdesign.de
+local_backend: true
+locale: de
+display_url: 'https://gatsby-netlifycms.tortuga-webdesign.de'
+site_url: 'https://gatsby-netlifycms.tortuga-webdesign.de'
+media_folder: /content/media
+public_folder: ../media

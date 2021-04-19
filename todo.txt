@@ -1,0 +1,2 @@
+- header und footer component
+- startseite designen

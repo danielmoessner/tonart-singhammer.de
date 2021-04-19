@@ -7,15 +7,11 @@ import Seo from '../components/Seo';
 // import Container from '../components/Container';
 
 function Page({ data }) {
-  const page = data.pagesYaml;
+  const page = { html: data.markdownRemark.html, ...data.markdownRemark.frontmatter };
 
   return (
     <div>
-      <Seo
-        title={page.meta.title}
-        description={page.meta.description}
-        image={page.meta.image.childImageSharp.resize.src}
-      />
+      <Seo title={page.meta.title} description={page.meta.description} />
       <div>{page.meta.title}</div>
     </div>
   );
@@ -32,17 +28,13 @@ export default Page;
 
 export const query = graphql`
   {
-    pagesYaml(slug: { eq: "page" }) {
-      meta {
-        image {
-          childImageSharp {
-            resize(width: 1200) {
-              src
-            }
-          }
+    markdownRemark(frontmatter: { slug: { eq: "imprint" } }) {
+      html
+      frontmatter {
+        meta {
+          description
+          title
         }
-        description
-        title
       }
     }
   }
