@@ -38,9 +38,9 @@ function Component({
   let colorClasses = ringOffsetClass;
   if (importance === 'primary') {
     classes = `${classes} shadow-sm`;
-    colorClasses = `${colorClasses} shadow-sm text-white bg-gray-600 hover:bg-gray-700 focus:ring-gray-500`;
+    colorClasses = `${colorClasses} shadow-sm text-white text-orange-050 bg-orange-800 hover:bg-orange-700 focus:ring-orange-700`;
   } else if (importance === 'secondary') {
-    colorClasses = `${colorClasses} text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-gray-500`;
+    colorClasses = `${colorClasses} text-orange-700 bg-white hover:bg-orange-050 focus:ring-orange-050`;
   }
   colorClasses = colors || colorClasses;
 
@@ -65,7 +65,7 @@ Component.defaultProps = {
   target: '_self',
   importance: 'primary',
   ringOffsetClass: '',
-  size: 'px-4 py-2 text-sm',
+  size: 'px-4 py-2 text-base',
   colors: '',
 };
 

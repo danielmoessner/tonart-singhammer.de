@@ -22,6 +22,16 @@ collections:
                 name: description
                 widget: text
               - { label: Bild, name: image, widget: image }
+          - label: Über mich
+            name: about
+            widget: object
+            fields:
+              - { label: Bild, name: image, widget: image }
+          - label: Meine Arbeiten
+            name: work
+            widget: object
+            fields:
+              - { label: Bild, name: image, widget: image }
 
       - file: content/pages/about.yml
         label: Über mich

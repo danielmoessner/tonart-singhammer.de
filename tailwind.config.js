@@ -13,6 +13,11 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
+      'adobe-1': '#C45414',
+      'adobe-2': '#8F5939',
+      'adobe-3': '#77340C',
+      'adobe-4': '#C47A4F',
+      'adobe-5': '#471F07',
       // Primary
       'yellow-050': '#FFFAEB',
       'yellow-100': '#FCEFC7',
