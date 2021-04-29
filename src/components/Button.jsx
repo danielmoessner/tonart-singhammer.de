@@ -34,13 +34,12 @@ function Component({
   }
 
   let classes =
-    'inline-flex items-center border border-transparent font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2';
+    'inline-flex items-center shadow-sm border border-transparent font-medium rounded tracking-tight focus:outline-none focus:ring-2 focus:ring-offset-2';
   let colorClasses = ringOffsetClass;
   if (importance === 'primary') {
-    classes = `${classes} shadow-sm`;
-    colorClasses = `${colorClasses} shadow-sm text-white text-orange-050 bg-orange-800 hover:bg-orange-700 focus:ring-orange-700`;
+    colorClasses = `${colorClasses} shadow-sm bg-adobe-4 text-adobe-5 hover:opacity-90 focus:ring-adobe-4`;
   } else if (importance === 'secondary') {
-    colorClasses = `${colorClasses} text-orange-700 bg-white hover:bg-orange-050 focus:ring-orange-050`;
+    colorClasses = `${colorClasses} text-adobe-4 bg-transparent border-adobe-4 hover:bg-adobe-4 focus:ring-adobe-4 hover:text-adobe-5`;
   }
   colorClasses = colors || colorClasses;
 
@@ -65,7 +64,7 @@ Component.defaultProps = {
   target: '_self',
   importance: 'primary',
   ringOffsetClass: '',
-  size: 'px-4 py-2 text-base',
+  size: 'px-6 py-3 text-base',
   colors: '',
 };
 

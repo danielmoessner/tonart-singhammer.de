@@ -5,11 +5,11 @@ import ChildrenData from '../types/ChildrenData';
 function Component({ element, children, color }) {
   const Tag = element;
 
-  return <Tag className={`text-sm font-semibold tracking-wide uppercase ${color}`}>{children}</Tag>;
+  return <Tag className={`text-lg font-medium tracking-wide ${color}`}>{children}</Tag>;
 }
 
 Component.defaultProps = {
-  element: 'div',
+  element: 'p',
   color: 'text-gray-700',
 };
 

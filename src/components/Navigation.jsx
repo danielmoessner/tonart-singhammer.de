@@ -45,7 +45,7 @@ function Component() {
 
   return (
     <nav>
-      <Popover className="relative bg-adobe-4">
+      <Popover className="relative bg-adobe-5">
         {({ open }) => (
           <>
             <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">

@@ -32,6 +32,12 @@ collections:
             widget: object
             fields:
               - { label: Bild, name: image, widget: image }
+              - label: Bilder
+                name: images
+                widget: list
+                fields:
+                  - { label: Bild, name: image, widget: image }
+                  - { label: Beschreibung, name: description, widget: string }
 
       - file: content/pages/about.yml
         label: Über mich
