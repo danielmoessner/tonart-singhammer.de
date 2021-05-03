@@ -2,16 +2,6 @@ import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
-import {
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
-  InboxIcon,
-  PencilAltIcon,
-  ReplyIcon,
-  TrashIcon,
-  UsersIcon,
-} from '@heroicons/react/outline';
 import Seo from '../components/Seo';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
@@ -25,56 +15,6 @@ function index({ data }) {
   const page = data.pagesYaml;
   const events = data.allEventYaml.nodes;
 
-  const features = [
-    {
-      name: 'Unlimited Inboxes',
-      description:
-        'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: InboxIcon,
-    },
-    {
-      name: 'Manage Team Members',
-      description:
-        'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: UsersIcon,
-    },
-    {
-      name: 'Spam Report',
-      description:
-        'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: TrashIcon,
-    },
-    {
-      name: 'Compose in Markdown',
-      description:
-        'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: PencilAltIcon,
-    },
-    {
-      name: 'Team Reporting',
-      description:
-        'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: DocumentReportIcon,
-    },
-    {
-      name: 'Saved Replies',
-      description:
-        'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: ReplyIcon,
-    },
-    {
-      name: 'Email Commenting',
-      description:
-        'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: ChatAltIcon,
-    },
-    {
-      name: 'Connect with Customers',
-      description:
-        'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: HeartIcon,
-    },
-  ];
   const metrics = [
     {
       id: 2,
@@ -149,7 +89,7 @@ function index({ data }) {
                 <div className="col-span-3 flex justify-end">
                   <GatsbyImage
                     className="w-full rounded shadow-xl ring-1 ring-black ring-opacity-5 lg:w-auto lg:max-w-none"
-                    image={page.work.image.childImageSharp.gatsbyImageData}
+                    image={page.header.image.childImageSharp.gatsbyImageData}
                     alt="Über mich Bild"
                   />
                 </div>
@@ -259,7 +199,7 @@ function index({ data }) {
                   Auftragsarbeiten
                 </Pre>
                 <Heading color="text-orange-050" size="h2">
-                  Auftragsarbeiten &amp; Erinnerungsgefäße
+                  Erinnerungsgefäße
                 </Heading>
                 <p className="mt-5 text-lg text-orange-100">
                   Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra
@@ -280,7 +220,7 @@ function index({ data }) {
                 </div>
                 <div className="mt-12">
                   <Button importance="secondary" ringOffsetClass="ring-offset-adobe-3">
-                    Zu den Auftragsarbeiten
+                    Zu den Erinnerungsgefäßen
                   </Button>
                 </div>
               </div>
@@ -378,7 +318,7 @@ function index({ data }) {
             <Container>
               <div className="sm:py-24 lg:flex lg:items-center lg:justify-between border-b border-adobe-2">
                 <Heading tag="h2" size="h3" color="text-orange-050">
-                  <span className="block">Auf der Suche nach einem Erinnerungsgefäß?</span>
+                  <span className="block">Auf der Suche nach einer Tonarbeit?</span>
                   <span className="block text-adobe-4">Ich freue mich auf Ihre Anfrage.</span>
                 </Heading>
                 <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
@@ -403,21 +343,6 @@ export default index;
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: { frontmatter: { collection: { eq: "animal" } } }) {
-      nodes {
-        frontmatter {
-          slug
-          excerpt
-          category
-          title
-          image {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
-      }
-    }
     pagesYaml(slug: { eq: "home" }) {
       meta {
         image {
@@ -429,6 +354,13 @@ export const query = graphql`
         }
         description
         title
+      }
+      header {
+        image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
       about {
         image {

@@ -4,6 +4,6 @@ slug: imprint
 meta:
   title: Impressum
   description: beschr
-  image: ../media/deer.jpg
+  image: ../media/DSC_5283B.jpg
 ---
 impressum

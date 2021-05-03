@@ -3,15 +3,17 @@ slug: home
 meta:
   description: beschr
   title: Brunhilde
-  image: ../media/elch.jpg
+  image: ../media/DSC_6557B.jpg
+header:
+  image: ../media/DSC_6557B.jpg
 about:
-  image: ../media/brunhilde_singhammer_200x300.jpg
+  image: ../media/DSC_6574B.jpg
 work:
   image: ../media/gallerie_1.jpg
   images:
-    - image: ../media/gallerie_1.jpg
+    - image: ../media/DSC_6380B.jpg
       description: Arbeit 1
-    - image: ../media/gallerie_10.jpg
+    - image: ../media/DSC_9701B.jpg
       description: Arbeit 2
-    - image: ../media/gallerie_7.jpg
+    - image: ../media/DSC_9685B.jpg
       description: Arbeit 3

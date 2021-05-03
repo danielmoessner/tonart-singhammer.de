@@ -46,7 +46,7 @@ function Component() {
   return (
     <nav>
       <Popover className="relative bg-adobe-5">
-        {({ open }) => (
+        {() => (
           <>
             <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
               <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -133,7 +133,10 @@ function Component() {
                 <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
                   Über mich
                 </a>
-                <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
+                <a
+                  href="/tonarbeiten/"
+                  className="text-base font-medium text-orange-050 hover:text-orange-100"
+                >
                   Tonarbeiten
                 </a>
                 <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">

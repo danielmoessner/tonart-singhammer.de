@@ -4,21 +4,19 @@ import PropTypes from 'prop-types';
 import { graphql, useStaticQuery } from 'gatsby';
 
 function SEO({ title, description, image }) {
-  const data = useStaticQuery(
-    graphql`
-      query Favicon {
-        settingsYaml(slug: { eq: "global" }) {
-          favicon {
-            childImageSharp {
-              resize(width: 256, height: 256, cropFocus: CENTER) {
-                src
-              }
+  const data = useStaticQuery(graphql`
+    {
+      settingsYaml(slug: { eq: "global" }) {
+        favicon {
+          childImageSharp {
+            resize(width: 256, height: 256, cropFocus: CENTER) {
+              src
             }
           }
         }
       }
-    `
-  );
+    }
+  `);
   const favicon = data.settingsYaml.favicon.childImageSharp.resize.src;
 
   return (

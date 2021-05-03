@@ -4,6 +4,6 @@ slug: privacy
 meta:
   title: Datenschutz
   description: beschr
-  image: ../media/deer.jpg
+  image: ../media/DSC_5283B.jpg
 ---
 datenschutz

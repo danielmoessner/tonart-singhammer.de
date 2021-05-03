@@ -31,6 +31,13 @@ collections:
               - label: Bild
                 name: image
                 widget: image
+          - label: Header
+            name: header
+            widget: object
+            fields:
+              - label: Bild
+                name: image
+                widget: image
           - label: Über mich
             name: about
             widget: object
@@ -80,6 +87,13 @@ collections:
               - label: Bild
                 name: image
                 widget: image
+          - label: Header
+            name: header
+            widget: object
+            fields:
+              - label: Bild
+                name: image
+                widget: image
       - file: content/pages/work.yml
         label: Tonarbeiten
         name: work
@@ -102,6 +116,13 @@ collections:
               - label: Beschreibung
                 name: description
                 widget: text
+              - label: Bild
+                name: image
+                widget: image
+          - label: Header
+            name: header
+            widget: object
+            fields:
               - label: Bild
                 name: image
                 widget: image
@@ -310,7 +331,6 @@ collections:
     label: Tonarbeiten
     label_singular: Tonarbeit
     folder: content/work
-    slug: '{{fields.slug}}'
     editor:
       preview: false
     extension: yml
@@ -323,9 +343,6 @@ collections:
       - label: Titel
         name: title
         widget: string
-      - label: Slug
-        name: slug
-        widget: string
       - label: Bild
         name: image
         widget: image
@@ -334,6 +351,8 @@ collections:
         widget: relation
         collection: technique
         search_fields:
+          - title
+        display_fields:
           - title
         value_field: slug
   - name: event
@@ -400,59 +419,6 @@ collections:
           - label: Favicon
             name: favicon
             widget: image
-  - name: animal
-    label: Wildtiere
-    label_singular: Wildtier
-    editor:
-      preview: true
-    folder: content/animals
-    slug: '{{fields.slug}}'
-    create: true
-    preview_path: 'wildtiere/{{fields.slug}}'
-    fields:
-      - label: Sammlung
-        name: collection
-        widget: hidden
-        default: animal
-      - label: Titel
-        name: title
-        widget: string
-      - label: Slug
-        name: slug
-        widget: string
-      - label: Bild
-        name: image
-        widget: image
-      - label: Auszug
-        name: excerpt
-        widget: text
-      - label: Inhalt
-        name: body
-        widget: markdown
-      - label: Kategorie
-        name: category
-        widget: relation
-        collection: category
-        searchFields:
-          - title
-        valueField: title
-  - name: category
-    label: Kategorien
-    label_singular: Kategorie
-    extension: yml
-    editor:
-      preview: false
-    folder: content/categories
-    slug: '{{slug}}'
-    create: true
-    fields:
-      - label: Sammlung
-        name: collection
-        widget: hidden
-        default: category
-      - label: Titel
-        name: title
-        widget: string
 backend:
   name: git-gateway
   branch: main
