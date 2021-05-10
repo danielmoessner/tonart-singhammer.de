@@ -21,7 +21,7 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
+            fields: &ref_0
               - label: Titel
                 name: title
                 widget: string
@@ -34,7 +34,16 @@ collections:
           - label: Header
             name: header
             widget: object
-            fields:
+            fields: &ref_1
+              - label: Pre
+                name: pre
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+              - label: Text
+                name: text
+                widget: text
               - label: Bild
                 name: image
                 widget: image
@@ -62,6 +71,13 @@ collections:
                   - label: Beschreibung
                     name: description
                     widget: string
+          - label: Auftragsarbeiten
+            name: order
+            widget: object
+            fields:
+              - label: Bild
+                name: image
+                widget: image
       - file: content/pages/about.yml
         label: Über mich
         name: about
@@ -77,23 +93,11 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
-              - label: Titel
-                name: title
-                widget: string
-              - label: Beschreibung
-                name: description
-                widget: text
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_0
           - label: Header
             name: header
             widget: object
-            fields:
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_1
       - file: content/pages/work.yml
         label: Tonarbeiten
         name: work
@@ -109,23 +113,11 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
-              - label: Titel
-                name: title
-                widget: string
-              - label: Beschreibung
-                name: description
-                widget: text
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_0
           - label: Header
             name: header
             widget: object
-            fields:
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_1
       - file: content/pages/order.yml
         label: Auftragsarbeiten
         name: order
@@ -141,16 +133,7 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
-              - label: Titel
-                name: title
-                widget: string
-              - label: Beschreibung
-                name: description
-                widget: text
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_0
       - file: content/pages/event.yml
         label: Veranstaltungen
         name: event
@@ -166,16 +149,7 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
-              - label: Titel
-                name: title
-                widget: string
-              - label: Beschreibung
-                name: description
-                widget: text
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_0
       - file: content/pages/technique.yml
         label: Töpfertechniken
         name: technique
@@ -191,16 +165,7 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
-              - label: Titel
-                name: title
-                widget: string
-              - label: Beschreibung
-                name: description
-                widget: text
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_0
       - file: content/pages/contact.yml
         label: Kontakt
         name: contact
@@ -216,16 +181,11 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
-              - label: Titel
-                name: title
-                widget: string
-              - label: Beschreibung
-                name: description
-                widget: text
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_0
+          - label: Header
+            name: header
+            widget: object
+            fields: *ref_1
       - file: content/pages/imprint.md
         label: Impressum
         name: imprint
@@ -241,16 +201,7 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
-              - label: Titel
-                name: title
-                widget: string
-              - label: Beschreibung
-                name: description
-                widget: text
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_0
           - label: Inhalt
             name: body
             widget: markdown
@@ -269,16 +220,7 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
-              - label: Titel
-                name: title
-                widget: string
-              - label: Beschreibung
-                name: description
-                widget: text
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_0
           - label: Inhalt
             name: body
             widget: markdown
@@ -297,16 +239,7 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields:
-              - label: Titel
-                name: title
-                widget: string
-              - label: Beschreibung
-                name: description
-                widget: text
-              - label: Bild
-                name: image
-                widget: image
+            fields: *ref_0
   - name: technique
     label: Töpfertechniken
     label_singular: Töpfertechnik
@@ -419,6 +352,8 @@ collections:
           - label: Favicon
             name: favicon
             widget: image
+header: *ref_1
+meta: *ref_0
 backend:
   name: git-gateway
   branch: main

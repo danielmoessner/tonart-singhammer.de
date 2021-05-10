@@ -28,13 +28,13 @@ function Page({ data }) {
         image={page.meta.image.childImageSharp.resize.src}
       />
       <Navigation />
-      <header className="bg-adobe-5 relative overflow-hidden">
+      <header className="bg-red-800 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 xl:px-0">
           <div className="pt-20 pb-20">
             <div className="grid grid-cols-5">
               <div className="col-span-3 pl-6 pr-10">
                 <div className="max-w-lg">
-                  <div className="mt-10 text-adobe-4 font-medium tracking-wider uppercase">
+                  <div className="mt-10 text-red-100 font-medium tracking-wider uppercase">
                     Tonarbeiten
                   </div>
                   <div className="mt-2">
@@ -98,8 +98,9 @@ function Page({ data }) {
               <Transition key={piece.title} show={shown === piece.title}>
                 <div className="">
                   <GatsbyImage
-                    className="w-full h-full static"
+                    className="w-full h-full"
                     objectFit="contain"
+                    style={{ position: 'static' }}
                     image={piece.image.childImageSharp.gatsbyImageData}
                     alt={piece.title}
                   />

@@ -3,17 +3,22 @@ slug: home
 meta:
   description: beschr
   title: Brunhilde
-  image: ../media/DSC_6557B.jpg
+  image: ../media/DSC_6563B.jpg
 header:
-  image: ../media/DSC_6557B.jpg
+  image: ../media/DSC_6563B.jpg
+  pre: Pre
+  title: Title
+  text: Text
 about:
   image: ../media/DSC_6574B.jpg
 work:
   image: ../media/gallerie_1.jpg
   images:
-    - image: ../media/DSC_6380B.jpg
+    - image: ../media/IPJC1672.jpg
       description: Arbeit 1
     - image: ../media/DSC_9701B.jpg
       description: Arbeit 2
     - image: ../media/DSC_9685B.jpg
       description: Arbeit 3
+order:
+  image: ../media/gallerie_1.jpg

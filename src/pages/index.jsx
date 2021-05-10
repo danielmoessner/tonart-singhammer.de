@@ -162,11 +162,13 @@ function index({ data }) {
                 {page.work.images.map((item) => (
                   <div key={item.description} className="p-2 w-full">
                     <div className="bg-adobe-5">
-                      <GatsbyImage
-                        className="block"
-                        image={item.image.childImageSharp.gatsbyImageData}
-                        alt={item.description}
-                      />
+                      <div className="aspect-h-11 aspect-w-16">
+                        <GatsbyImage
+                          style={{ display: 'block' }}
+                          image={item.image.childImageSharp.gatsbyImageData}
+                          alt={item.description}
+                        />
+                      </div>
                       <p className="text-right font-light tracking-wide hidden mt-1">
                         {item.description}
                       </p>
@@ -181,10 +183,10 @@ function index({ data }) {
             <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
               <div className="h-full w-full xl:grid xl:grid-cols-2">
                 <div className="h-full xl:relative xl:col-start-2">
-                  <img
+                  <GatsbyImage
+                    image={page.order.image.childImageSharp.gatsbyImageData}
                     className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                    src="http://tonart-singhammer.de/wp-content/uploads/2015/11/Gallerie_1.jpg"
-                    alt="People working on laptops"
+                    alt="Auftragsarbeiten"
                   />
                   <div
                     aria-hidden="true"
@@ -369,12 +371,14 @@ export const query = graphql`
           }
         }
       }
-      work {
+      order {
         image {
           childImageSharp {
             gatsbyImageData
           }
         }
+      }
+      work {
         images {
           image {
             childImageSharp {

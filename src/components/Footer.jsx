@@ -3,6 +3,7 @@ import React from 'react';
 // import { Link } from 'gatsby';
 // import { Transition } from '@headlessui/react';
 import Container from './Container';
+import Logo from './Logo';
 
 function Component() {
   const footerNavigation = {
@@ -57,7 +58,7 @@ function Component() {
   };
 
   return (
-    <footer className="bg-adobe-5" aria-labelledby="footerHeading">
+    <footer className="bg-red-800" aria-labelledby="footerHeading">
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
@@ -68,7 +69,7 @@ function Component() {
               <div className="md:grid md:grid-cols-3 md:gap-8">
                 <div className="col-span-2">
                   <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
-                    Logo hier
+                    <Logo />
                   </h3>
                   <ul className="mt-4 space-y-4" />
                 </div>

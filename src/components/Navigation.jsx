@@ -11,6 +11,7 @@ import {
   InboxIcon,
   QuestionMarkCircleIcon,
 } from '@heroicons/react/solid';
+import Logo from './Logo';
 
 function Component() {
   function classNames(...classes) {
@@ -45,23 +46,18 @@ function Component() {
 
   return (
     <nav>
-      <Popover className="relative bg-adobe-5">
+      <Popover className="relative bg-red-800">
         {() => (
           <>
             <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="/">
-                  <span className="sr-only">Workflow</span>
-                  <img
-                    className="h-8 w-auto sm:h-10"
-                    src="https://tailwindui.com/img/logos/workflow-mark-red-600-to-yellow-600.svg"
-                    alt=""
-                  />
+                  <Logo />
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
                 <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
-                  <span className="sr-only">Open menu</span>
+                  <span className="sr-only">Menü öffnen</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
@@ -128,9 +124,6 @@ function Component() {
                 </Popover>
 
                 <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
-                  Startseite
-                </a>
-                <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
                   Über mich
                 </a>
                 <a
@@ -148,11 +141,13 @@ function Component() {
                 <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
                   Töpfertechniken
                 </a>
-                <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
+                <a
+                  href="/kontakt/"
+                  className="text-base font-medium text-orange-050 hover:text-orange-100"
+                >
                   Kontakt
                 </a>
               </Popover.Group>
-              <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0" />
             </div>
 
             <Transition
