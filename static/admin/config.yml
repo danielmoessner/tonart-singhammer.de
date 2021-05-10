@@ -134,6 +134,10 @@ collections:
             name: meta
             widget: object
             fields: *ref_0
+          - label: Header
+            name: header
+            widget: object
+            fields: *ref_1
       - file: content/pages/event.yml
         label: Veranstaltungen
         name: event
@@ -150,6 +154,10 @@ collections:
             name: meta
             widget: object
             fields: *ref_0
+          - label: Header
+            name: header
+            widget: object
+            fields: *ref_1
       - file: content/pages/technique.yml
         label: Töpfertechniken
         name: technique
@@ -166,6 +174,10 @@ collections:
             name: meta
             widget: object
             fields: *ref_0
+          - label: Header
+            name: header
+            widget: object
+            fields: *ref_1
       - file: content/pages/contact.yml
         label: Kontakt
         name: contact
@@ -202,6 +214,16 @@ collections:
             name: meta
             widget: object
             fields: *ref_0
+          - label: Header
+            name: header
+            widget: object
+            fields:
+              - label: Pre
+                name: pre
+                widget: string
+              - label: Title
+                name: title
+                widget: string
           - label: Inhalt
             name: body
             widget: markdown
@@ -221,6 +243,16 @@ collections:
             name: meta
             widget: object
             fields: *ref_0
+          - label: Header
+            name: header
+            widget: object
+            fields:
+              - label: Pre
+                name: pre
+                widget: string
+              - label: Title
+                name: title
+                widget: string
           - label: Inhalt
             name: body
             widget: markdown
@@ -260,6 +292,22 @@ collections:
       - label: Slug
         name: slug
         widget: string
+      - label: Beschreibung
+        name: description
+        widget: text
+      - label: Image
+        name: image
+        widget: image
+      - label: Features
+        name: features
+        widget: list
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Text
+            name: text
+            widget: text
   - name: work
     label: Tonarbeiten
     label_singular: Tonarbeit
@@ -318,6 +366,10 @@ collections:
         widget: datetime
         date_format: DD.MM.YYYY
         time_format: 'HH:mm'
+      - label: Ort
+        name: location
+        widget: string
+        required: false
       - label: Beschreibung
         name: description
         widget: text

@@ -135,10 +135,16 @@ function Component() {
                 <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
                   Auftragsarbeiten
                 </a>
-                <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
+                <a
+                  href="/veranstaltungen/"
+                  className="text-base font-medium text-orange-050 hover:text-orange-100"
+                >
                   Veranstaltungen
                 </a>
-                <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
+                <a
+                  href="/toepfertechniken/"
+                  className="text-base font-medium text-orange-050 hover:text-orange-100"
+                >
                   Töpfertechniken
                 </a>
                 <a

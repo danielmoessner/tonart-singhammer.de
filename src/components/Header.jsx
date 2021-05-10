@@ -24,16 +24,20 @@ function Component({ header }) {
                     {header.title}
                   </Heading>
                 </div>
-                <p className="text-lg font-medium mt-8 text-gray-050">{header.text}</p>
+                {header.text && (
+                  <p className="text-lg font-medium mt-8 text-gray-050">{header.text}</p>
+                )}
               </div>
             </div>
-            <div className="col-span-2 flex justify-end">
-              <GatsbyImage
-                className="w-full rounded shadow-xl ring-1 ring-black ring-opacity-5 lg:w-auto lg:max-w-none"
-                image={header.image.childImageSharp.gatsbyImageData}
-                alt="Über mich Bild"
-              />
-            </div>
+            {header.image && (
+              <div className="col-span-2 flex justify-end">
+                <GatsbyImage
+                  className="w-full rounded shadow-xl ring-1 ring-black ring-opacity-5 lg:w-auto lg:max-w-none"
+                  image={header.image.childImageSharp.gatsbyImageData}
+                  alt="Über mich Bild"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -42,19 +46,24 @@ function Component({ header }) {
   );
 }
 
-Component.defaultProps = {};
+Component.defaultProps = {
+  header: {
+    text: '',
+    image: '',
+  },
+};
 
 Component.propTypes = {
   header: PropTypes.shape({
-    pre: PropTypes.string,
-    title: PropTypes.string,
+    pre: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
     text: PropTypes.string,
     image: PropTypes.shape({
       childImageSharp: PropTypes.shape({
         gatsbyImageData: GatsbyImageData,
       }),
     }),
-  }).isRequired,
+  }),
 };
 
 export default Component;

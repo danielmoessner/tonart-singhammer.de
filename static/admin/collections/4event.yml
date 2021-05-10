@@ -15,4 +15,5 @@ collections:
       - { label: Slug, name: slug, widget: string }
       - { label: Anfang, name: start, widget: datetime, date_format: "DD.MM.YYYY", time_format: "HH:mm" }
       - { label: Ende, name: end, widget: datetime, date_format: "DD.MM.YYYY", time_format: "HH:mm" }
+      - { label: Ort, name: location, widget: string, required: false }
       - { label: Beschreibung, name: description, widget: text }

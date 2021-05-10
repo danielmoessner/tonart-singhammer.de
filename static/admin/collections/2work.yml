@@ -13,6 +13,15 @@ collections:
       - { label: Sammlung, name: collection, widget: hidden, default: technique }
       - { label: Titel, name: title, widget: string }
       - { label: Slug, name: slug, widget: string }
+      - { label: Beschreibung, name: description, widget: text }
+      - { label: Image, name: image, widget: image }
+      - label: Features
+        name: features
+        widget: list
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Text, name: text, widget: text }
+
   - name: work
     label: Tonarbeiten
     label_singular: Tonarbeit

@@ -5,5 +5,18 @@ meta:
   title: Datenschutz
   description: beschr
   image: ../media/DSC_5283B.jpg
+header:
+  pre: Rechtliches
+  title: Datenschutz
 ---
-datenschutz
+## datenschutz
+
+text
+
+text
+
+text
+
+text
+
+texttexttext

@@ -4,16 +4,27 @@ import PropTypes from 'prop-types';
 import Seo from '../components/Seo';
 // import { Link, graphql } from 'gatsby';
 // import { Transition } from '@headlessui/react';
-// import Container from '../components/Container';
+import Container from '../components/Container';
+import Layout from '../components/Layout';
+import Header from '../components/Header';
 
 function Page({ data }) {
   const page = { html: data.markdownRemark.html, ...data.markdownRemark.frontmatter };
 
   return (
-    <div>
+    <Layout>
       <Seo title={page.meta.title} description={page.meta.description} />
-      <div>{page.meta.title}</div>
-    </div>
+      <Header header={page.header} />
+      <section className="py-32">
+        <Container>
+          <article
+            className="prose mx-auto"
+            // eslint-disable-next-line
+            dangerouslySetInnerHTML={{ __html: page.html }} 
+          />
+        </Container>
+      </section>
+    </Layout>
   );
 }
 
@@ -33,6 +44,10 @@ export const query = graphql`
       frontmatter {
         meta {
           description
+          title
+        }
+        header {
+          pre
           title
         }
       }

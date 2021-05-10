@@ -1,3 +1,14 @@
 collection: technique
 title: Raku-Technik
 slug: raku
+description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex
+  obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod
+  quibusdam expedita nemo.
+image: ../media/DSC_5259B.jpg
+features:
+  - text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+      perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+    title: Feature 1
+  - text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+      perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+    title: Feature 2

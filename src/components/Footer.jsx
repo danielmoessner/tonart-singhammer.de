@@ -1,6 +1,6 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-// import { Link } from 'gatsby';
+import { Link } from 'gatsby';
 // import { Transition } from '@headlessui/react';
 import Container from './Container';
 import Logo from './Logo';
@@ -8,27 +8,27 @@ import Logo from './Logo';
 function Component() {
   const footerNavigation = {
     navigation: [
-      { name: 'Startseite', href: '#' },
-      { name: 'Über mich', href: '#' },
-      { name: 'Tonarbeiten', href: '#' },
-      { name: 'Auftragsarbeiten', href: '#' },
-      { name: 'Veranstaltungen', href: '#' },
-      { name: 'Töpfertechniken', href: '#' },
-      { name: 'Kontakt', href: '#' },
+      { name: 'Startseite', to: '/' },
+      { name: 'Über mich', to: '/' },
+      { name: 'Tonarbeiten', to: '/' },
+      { name: 'Auftragsarbeiten', to: '/' },
+      { name: 'Veranstaltungen', to: '/' },
+      { name: 'Töpfertechniken', to: '/' },
+      { name: 'Kontakt', to: '/' },
     ],
     contact: [
-      { name: 'Telefon: 12343423', href: '#' },
-      { name: 'E-Mail: email@email.de', href: '#' },
-      { name: 'Adresse: Straße 123 Stadt 123', href: '#' },
+      { name: 'Telefon: 12343423', href: '/' },
+      { name: 'E-Mail: email@email.de', href: '/' },
+      { name: 'Adresse: Straße 123 Stadt 123', href: '/' },
     ],
     legal: [
-      { name: 'Impressum', href: '#' },
-      { name: 'Datenschutz', href: '#' },
+      { name: 'Impressum', to: '/impressum/' },
+      { name: 'Datenschutz', to: '/datenschutz/' },
     ],
     social: [
       // {
       //   name: 'Facebook',
-      //   href: '#',
+      //   to: '/',
       //   icon: (props) => (
       //     // eslint-disable-next-line
       //     <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -42,7 +42,7 @@ function Component() {
       // },
       // {
       //   name: 'Instagram',
-      //   href: '#',
+      //   to: '/',
       //   icon: (props) => (
       //     // eslint-disable-next-line
       //     <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -80,12 +80,12 @@ function Component() {
                   <ul className="mt-4 space-y-4">
                     {footerNavigation.navigation.map((item) => (
                       <li key={item.name}>
-                        <a
-                          href={item.href}
+                        <Link
+                          to={item.to}
                           className="text-base text-orange-100 hover:text-orange-050"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -116,12 +116,12 @@ function Component() {
                   <ul className="mt-4 space-y-4">
                     {footerNavigation.legal.map((item) => (
                       <li key={item.name}>
-                        <a
-                          href={item.href}
+                        <Link
+                          to={item.to}
                           className="text-base text-orange-100 hover:text-orange-050"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -132,14 +132,14 @@ function Component() {
           <div className="mt-12 border-t border-adobe-2 pt-8 md:flex md:items-center md:justify-between lg:mt-16">
             <div className="flex space-x-6 md:order-2">
               {footerNavigation.social.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.to}
                   className="text-orange-100 hover:text-orange-050"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
+                </Link>
               ))}
             </div>
             <p className="mt-8 text-base text-orange-100 text-opacity-50 md:mt-0 md:order-1">

@@ -85,7 +85,10 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      gridColumnStart: ['odd'],
+      gridRowStart: ['odd'],
+    },
   },
   plugins: [typography, aspectRatio, lineClamp, forms],
 };
