@@ -54,7 +54,7 @@ collections:
             fields:
               - { label: Bild, name: image, widget: image }
 
-      - file: content/pages/about.yml
+      - file: content/pages/about.md
         label: Über mich
         name: about
         fields:
@@ -68,6 +68,12 @@ collections:
             name: header
             widget: object
             fields: *HEADER
+          - label: Inhalt
+            name: content
+            widget: object
+            fields:
+              - { label: Bild, name: image, widget: image }
+          - { label: Inhalt, name: body, widget: markdown }
 
       - file: content/pages/work.yml
         label: Tonarbeiten

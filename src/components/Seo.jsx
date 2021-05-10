@@ -70,4 +70,17 @@ export const metaFragment = graphql`
       description
     }
   }
+  fragment metaMarkdown on MarkdownRemarkFrontmatter {
+    meta {
+      image {
+        childImageSharp {
+          resize(width: 1200) {
+            src
+          }
+        }
+      }
+      title
+      description
+    }
+  }
 `;

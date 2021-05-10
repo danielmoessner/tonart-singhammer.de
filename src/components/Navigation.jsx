@@ -123,7 +123,10 @@ function Component() {
                   )}
                 </Popover>
 
-                <a href="/" className="text-base font-medium text-orange-050 hover:text-orange-100">
+                <a
+                  href="/ueber-mich/"
+                  className="text-base font-medium text-orange-050 hover:text-orange-100"
+                >
                   Über mich
                 </a>
                 <a

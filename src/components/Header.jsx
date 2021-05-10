@@ -81,4 +81,16 @@ export const headerFragment = graphql`
       text
     }
   }
+  fragment headerMarkdown on MarkdownRemarkFrontmatter {
+    header {
+      image {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      pre
+      title
+      text
+    }
+  }
 `;
