@@ -16,7 +16,7 @@ function Component({ header }) {
           <div className="grid grid-cols-5">
             <div className="col-span-3 pl-6 pr-10">
               <div className="max-w-lg">
-                <div className="mt-10 text-adobe-4 font-medium tracking-wider uppercase">
+                <div className="mt-6 text-adobe-4 font-medium tracking-wider uppercase">
                   {header.pre}
                 </div>
                 <div className="mt-2">

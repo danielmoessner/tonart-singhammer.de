@@ -25,7 +25,10 @@ function Page({ data }) {
       <div className="py-16 bg-gray-50 overflow-hidden lg:py-32">
         <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl space-y-12 lg:space-y-24">
           {techniques.map((technique, index) => (
-            <div className="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+            <div
+              key={technique.title}
+              className="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
+            >
               <div className={`relative ${index % 2 ? 'col-start-2' : ''}`}>
                 <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                   {technique.title}

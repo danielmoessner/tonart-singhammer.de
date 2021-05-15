@@ -4,3 +4,13 @@ meta:
   title: Auftragsarbeiten
   description: beschr
   image: ../media/DSC_5283B.jpg
+header:
+  pre: Auftragsarbeiten
+  title: Ich helfe Ihnen gerne
+  text: lorem ipsum dolor sit amet, te dolor di dadidum de dadurum da tore.
+  image: ../media/DSC_9694B.jpg
+order:
+  content: |-
+    ## Heading
+
+    text text

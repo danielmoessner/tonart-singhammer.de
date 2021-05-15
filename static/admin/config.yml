@@ -148,6 +148,13 @@ collections:
             name: header
             widget: object
             fields: *ref_1
+          - label: Auftragsarbeiten
+            name: order
+            widget: object
+            fields:
+              - label: Inhalt
+                name: content
+                widget: markdown
       - file: content/pages/event.yml
         label: Veranstaltungen
         name: event
@@ -282,6 +289,31 @@ collections:
             name: meta
             widget: object
             fields: *ref_0
+  - name: service
+    label: Leistungen
+    label_singular: Leistung
+    folder: content/service
+    editor:
+      preview: false
+    extension: md
+    create: true
+    fields:
+      - label: Sammlung
+        name: collection
+        widget: hidden
+        default: service
+      - label: Vortitel
+        name: pre
+        widget: string
+      - label: Titel
+        name: title
+        widget: string
+      - label: Sortierung
+        name: order
+        widget: number
+      - label: Inhalt
+        name: body
+        widget: markdown
   - name: technique
     label: Töpfertechniken
     label_singular: Töpfertechnik

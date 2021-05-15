@@ -61,10 +61,10 @@ function index({ data }) {
         />
         <Navigation />
         <header className="bg-adobe-5 relative overflow-hidden">
-          <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 xl:px-0">
+          <Container layout="sm">
             <div className="pt-36 pb-36">
               <div className="grid grid-cols-6">
-                <div className="col-span-3 pl-6 pr-10">
+                <div className="col-span-3 pr-10 pt-10">
                   <div className="text-adobe-4 font-medium tracking-wider uppercase">
                     Brunhilde Singhammer
                   </div>
@@ -86,7 +86,7 @@ function index({ data }) {
                     </Button>
                   </div>
                 </div>
-                <div className="col-span-3 flex justify-end">
+                <div className="col-span-3 px-20 flex justify-end">
                   <GatsbyImage
                     className="w-full rounded shadow-xl ring-1 ring-black ring-opacity-5 lg:w-auto lg:max-w-none"
                     image={page.header.image.childImageSharp.gatsbyImageData}
@@ -95,16 +95,14 @@ function index({ data }) {
                 </div>
               </div>
             </div>
-          </div>
+          </Container>
           <div className="absolute w-96 h-96 hidden bottom-0 left-0 bg-adobe-1 -translate-x-1/2 transform translate-y-1/2 z-0" />
         </header>
 
         <main className="">
-          <section className="bg-white hidden py-20" />
-
           <section className="bg-white py-20 relative overflow-hidden">
             <div className="absolute w-80 h-80 rounded-full top-0 right-0 bg-adobe-1 translate-x-1/2 transform -translate-y-1/2 z-0" />
-            <Container>
+            <Container layout="sm">
               <div className="py-20">
                 <div className="text-center">
                   <Pre color="text-gray-800">Brunhilde Singhammer</Pre>
@@ -123,7 +121,7 @@ function index({ data }) {
                 <div className="mt-12">
                   <div className="grid grid-cols-6">
                     <div className="col-span-3">
-                      <div className="px-3">
+                      <div className="">
                         <GatsbyImage
                           className="w-full rounded-sm shadow h-full"
                           image={page.about.image.childImageSharp.gatsbyImageData}
@@ -164,7 +162,7 @@ function index({ data }) {
                     <div className="bg-adobe-5">
                       <div className="aspect-h-11 aspect-w-16">
                         <GatsbyImage
-                          style={{ display: 'block' }}
+                          style={{ display: 'block', position: 'absolute' }}
                           image={item.image.childImageSharp.gatsbyImageData}
                           alt={item.description}
                         />
@@ -317,7 +315,7 @@ function index({ data }) {
           </div>
 
           <div className="bg-adobe-5 relative">
-            <Container>
+            <Container layout="sm">
               <div className="sm:py-24 lg:flex lg:items-center lg:justify-between border-b border-adobe-2">
                 <Heading tag="h2" size="h3" color="text-orange-050">
                   <span className="block">Auf der Suche nach einer Tonarbeit?</span>

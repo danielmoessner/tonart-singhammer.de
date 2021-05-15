@@ -58,11 +58,11 @@ function Component() {
   };
 
   return (
-    <footer className="bg-red-800" aria-labelledby="footerHeading">
+    <footer className="bg-adobe-5" aria-labelledby="footerHeading">
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
-      <Container>
+      <Container layout="sm">
         <div className="pt-16 pb-8 lg:pt-24">
           <div className="xl:grid xl:grid-cols-6 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 col-span-6 xl:col-span-5">

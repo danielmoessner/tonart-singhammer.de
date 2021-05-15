@@ -4,7 +4,7 @@ header: &HEADER
   - { label: Text, name: text, widget: text }
   - { label: Bild, name: image, widget: image }
 
-meta: &META 
+meta: &META
   - { label: Titel, name: title, widget: string }
   - { label: Beschreibung, name: description, widget: text }
   - { label: Bild, name: image, widget: image }
@@ -100,10 +100,15 @@ collections:
             name: 'meta'
             widget: 'object'
             fields: *META
-          - label: Header 
+          - label: Header
             name: header
             widget: object
-            fields: *HEADER  
+            fields: *HEADER
+          - label: Auftragsarbeiten
+            name: order
+            widget: object
+            fields:
+              - { label: Inhalt, name: content, widget: markdown }
 
       - file: content/pages/event.yml
         label: Veranstaltungen
@@ -114,11 +119,11 @@ collections:
           - label: 'Meta'
             name: 'meta'
             widget: 'object'
-            fields: *META   
-          - label: Header 
+            fields: *META
+          - label: Header
             name: header
             widget: object
-            fields: *HEADER                        
+            fields: *HEADER
 
       - file: content/pages/technique.yml
         label: Töpfertechniken
@@ -129,11 +134,11 @@ collections:
           - label: Meta
             name: meta
             widget: object
-            fields: *META            
-          - label: Header 
+            fields: *META
+          - label: Header
             name: header
             widget: object
-            fields: *HEADER             
+            fields: *HEADER
 
       - file: content/pages/contact.yml
         label: Kontakt
@@ -144,11 +149,11 @@ collections:
           - label: 'Meta'
             name: 'meta'
             widget: 'object'
-            fields: *META 
+            fields: *META
           - label: Header
             name: header
             widget: object
-            fields: *HEADER                         
+            fields: *HEADER
 
       - file: content/pages/imprint.md
         label: Impressum
@@ -159,14 +164,14 @@ collections:
           - label: 'Meta'
             name: 'meta'
             widget: 'object'
-            fields: *META 
+            fields: *META
           - label: Header
-            name: header 
+            name: header
             widget: object
             fields:
               - { label: Pre, name: pre, widget: string }
               - { label: Title, name: title, widget: string }
-          - { label: Inhalt, name: body, widget: markdown }                         
+          - { label: Inhalt, name: body, widget: markdown }
 
       - file: content/pages/privacy.md
         label: Datenschutz
@@ -179,12 +184,12 @@ collections:
             widget: 'object'
             fields: *META
           - label: Header
-            name: header 
+            name: header
             widget: object
             fields:
               - { label: Pre, name: pre, widget: string }
               - { label: Title, name: title, widget: string }
-          - { label: Inhalt, name: body, widget: markdown }                                                                               
+          - { label: Inhalt, name: body, widget: markdown }
 
       - file: content/pages/styleguide.yml
         label: Styleguide
