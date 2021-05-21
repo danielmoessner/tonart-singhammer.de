@@ -7,17 +7,23 @@ const forms = require('@tailwindcss/forms');
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
+  // mode: 'jit',
   theme: {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      'adobe-1': '#C45414',
-      'adobe-2': '#8F5939',
-      'adobe-3': '#77340C',
-      'adobe-4': '#C47A4F',
-      'adobe-5': '#471F07',
+      // 'adobe-1': '#C45414',
+      // 'adobe-2': '#8F5939',
+      // 'adobe-3': '#77340C',
+      // 'adobe-4': '#C47A4F',
+      // 'adobe-5': '#471F07',
+      'adobe-1': '#FFE548',
+      'adobe-2': '#14665f',
+      'adobe-3': '#D66853',
+      'adobe-4': '#E9B8AC',
+      'adobe-5': '#7A272B',
       // Primary
       'yellow-050': '#FFFAEB',
       'yellow-100': '#FCEFC7',

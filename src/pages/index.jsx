@@ -11,7 +11,7 @@ import Heading from '../components/Heading';
 import Pre from '../components/Pre';
 import Post from '../components/Post';
 
-function index({ data }) {
+function Page({ data }) {
   const page = data.pagesYaml;
   const events = data.allEventYaml.nodes;
 
@@ -265,11 +265,11 @@ function index({ data }) {
             <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
               <div className="h-full w-full xl:grid xl:grid-cols-2">
                 <div className="h-full xl:relative xl:col-start-1">
-                  <img
+                  {/* <img
                     className="h-full w-full object-cover opacity-75 xl:absolute xl:inset-0"
                     src="https://images.unsplash.com/photo-1562735353-729013249e19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80"
                     alt="People working on laptops"
-                  />
+                  /> */}
                   <div
                     aria-hidden="true"
                     className="absolute hidden inset-x-0 top-0 h-32 bg-gradient-to-b from-orange-800 xl:inset-y-0 xl:right-0 xl:h-full xl:w-32 xl:bg-gradient-to-l xl:inset-auto"
@@ -316,7 +316,7 @@ function index({ data }) {
 
           <div className="bg-adobe-5 relative">
             <Container layout="sm">
-              <div className="sm:py-24 lg:flex lg:items-center lg:justify-between border-b border-adobe-2">
+              <div className="sm:py-24 lg:flex lg:items-center lg:justify-between">
                 <Heading tag="h2" size="h3" color="text-orange-050">
                   <span className="block">Auf der Suche nach einer Tonarbeit?</span>
                   <span className="block text-adobe-4">Ich freue mich auf Ihre Anfrage.</span>
@@ -325,6 +325,7 @@ function index({ data }) {
                   <Button importance="primary">Jetzt Kontakt aufnehmen</Button>
                 </div>
               </div>
+              <div className="border-t border-adobe-4 opacity-20" />
             </Container>
           </div>
         </main>
@@ -334,12 +335,12 @@ function index({ data }) {
   );
 }
 
-index.propTypes = {
+Page.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   data: PropTypes.object.isRequired,
 };
 
-export default index;
+export default Page;
 
 export const query = graphql`
   {

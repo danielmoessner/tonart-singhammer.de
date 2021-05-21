@@ -129,7 +129,8 @@ function Component() {
               </div>
             </div>
           </div>
-          <div className="mt-12 border-t border-adobe-2 pt-8 md:flex md:items-center md:justify-between lg:mt-16">
+          <div className="mt-12 border-t border-adobe-4 opacity-20 lg:mt-16" />
+          <div className="pt-8 md:flex md:items-center md:justify-between">
             <div className="flex space-x-6 md:order-2">
               {footerNavigation.social.map((item) => (
                 <Link
