@@ -1,33 +1,29 @@
-/* eslint-disable react/prop-types */
-
-import CMS from 'netlify-cms-app';
+import CMS, { init } from 'netlify-cms-app';
 import { de } from 'netlify-cms-locales';
-// import React from 'react';
-// import Animal from '../components/Animal';
-// import AnimalCard from '../components/AnimalCard';
-// import Container from '../components/Container';
-// import '../styles/global.css';
+import event from './event';
+import order from './order';
+import page from './page';
+import setting from './setting';
+import technique from './technique';
+import work from './work';
 
-// Localization
+// See https://www.netlifycms.org/docs/configuration-options/#locale
 CMS.registerLocale('de', de);
 
-// Previews
-// const AnimalPreview = ({ entry, widgetFor }) => {
-//   const animal = {
-//     title: entry.getIn(['data', 'title']),
-//     category: entry.getIn(['data', 'category']),
-//     excerpt: entry.getIn(['data', 'excerpt']),
-//   };
-//   return (
-//     <Container>
-//       <div className="pb-32 pt-5">
-//         <Animal preview animal={animal} image={widgetFor('image')} body={widgetFor('body')} />
-//         <hr className="bg-gray-600 my-10" />
-//         <div className="max-w-xs">
-//           <AnimalCard preview animal={animal} image={widgetFor('image')} />
-//         </div>
-//       </div>
-//     </Container>
-//   );
-// };
-// CMS.registerPreviewTemplate('animal', AnimalPreview);
+// See https://www.netlifycms.org/docs/beta-features/#manual-initialization
+init({
+  config: {
+    backend: {
+      name: 'git-gateway',
+      branch: 'main',
+      repo: 'danielmoessner/gatsby-netlifycms.tortuga-webdesign.de',
+    },
+    local_backend: true,
+    locale: 'de',
+    display_url: 'https://gatsby-netlifycms.tortuga-webdesign.de',
+    site_url: 'https://gatsby-netlifycms.tortuga-webdesign.de',
+    media_folder: '/content/media',
+    public_folder: '../media',
+    collections: [...page, order, technique, work, event, setting],
+  },
+});
