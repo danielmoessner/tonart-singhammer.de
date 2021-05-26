@@ -13,7 +13,6 @@
     "serve": "gatsby serve",
     "kill": "kill-port 8000",
     "cms": "npx netlify-cms-proxy-server",
-    "combine": "combine-yaml -i static/admin/base.yml static/admin/collections/*.yml -o static/admin/config.yml",
     "update": "npx npm-check-updates -u --timeout 60000 && npm install",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,7 +26,6 @@
     "@tailwindcss/typography": "^0.4.1",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.2.6",
-    "combine-yaml-cli": "0.0.2",
     "eslint": "^7.26.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
