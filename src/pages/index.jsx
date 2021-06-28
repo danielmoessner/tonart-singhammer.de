@@ -26,8 +26,8 @@ function Page({ data }) {
         <Navigation />
         <header className="bg-adobe-5 relative overflow-hidden">
           <Container layout="sm">
-            <div className="pt-36 pb-36">
-              <div className="grid grid-cols-6">
+            <div className="lg:pt-36 lg:pb-36">
+              <div className="grid grid-cols-3 lg:grid-cols-6">
                 <div className="col-span-3 pr-10 pt-10">
                   <div className="text-adobe-4 font-medium tracking-wider uppercase">
                     {page.header.pre}
@@ -55,7 +55,7 @@ function Page({ data }) {
                     </Button>
                   </div>
                 </div>
-                <div className="col-span-3 px-20 flex justify-end">
+                <div className="col-span-3 px-20 flex justify-end py-10 lg:py-0">
                   <GatsbyImage
                     className="w-full rounded shadow-xl ring-1 ring-black ring-opacity-5 lg:w-auto lg:max-w-none"
                     image={page.header.image.childImageSharp.gatsbyImageData}
@@ -85,7 +85,7 @@ function Page({ data }) {
                   </div>
                 </div>
                 <div className="mt-12">
-                  <div className="grid grid-cols-6">
+                  <div className="grid grid-cols-3 lg:grid-cols-6">
                     <div className="col-span-3">
                       <div className="">
                         <GatsbyImage
@@ -101,11 +101,11 @@ function Page({ data }) {
                           {page.about.content.map((item) => (
                             <div key={item.title} className="relative">
                               <dt>
-                                <p className="ml-16 font-serif font-bold text-lg leading-6 tracking-wide text-gray-900">
+                                <p className="lg:ml-16 font-serif font-bold text-lg leading-6 tracking-wide text-gray-900">
                                   {item.title}
                                 </p>
                               </dt>
-                              <dd className="mt-2 ml-16 text-base text-gray-500">{item.text}</dd>
+                              <dd className="mt-2 lg:ml-16 text-base text-gray-500">{item.text}</dd>
                             </div>
                           ))}
                         </dl>
@@ -176,6 +176,7 @@ function Page({ data }) {
           </section>
 
           <section className="relative">
+            <div className="hidden md:gap-0absolute w-96 h-96 rounded-full bottom-0 left-0 bg-adobe-1 -translate-x-1/2 transform translate-y-1/2 z-0" />
             <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
               <Pre color="text-adobe-5">{page.events.pre}</Pre>
               <Heading tag="h2" size="h2" color="text-adobe-5">
@@ -186,7 +187,7 @@ function Page({ data }) {
               </div>
               <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 {events.map((event) => (
-                  <div key={event.slug}>
+                  <div className="relative" key={event.slug}>
                     <div className="">
                       <div className="text-sm text-adobe-5">{event.start}</div>
                       <div className="mt-1">
@@ -194,7 +195,7 @@ function Page({ data }) {
                           {event.title}
                         </Heading>
                       </div>
-                      <p className="mt-2 line-clamp-3 text-base text-adobe-3">
+                      <p className="mt-2 line-clamp-3 text-base text-adobe-5">
                         {event.description}
                       </p>
                     </div>
@@ -202,12 +203,11 @@ function Page({ data }) {
                 ))}
               </div>
             </div>
-            <div className="absolute w-96 h-96 rounded-full bottom-0 left-0 bg-adobe-1 -translate-x-1/2 transform translate-y-1/2 z-0" />
           </section>
 
           <div className="bg-adobe-5 relative">
             <Container layout="sm">
-              <div className="sm:py-24 lg:flex lg:items-center lg:justify-between">
+              <div className="py-12 sm:py-24 lg:flex lg:items-center lg:justify-between">
                 <Heading tag="h2" size="h3" color="text-orange-050">
                   <span className="block">{page.cta.textTop}</span>
                   <span className="block text-adobe-4">{page.cta.textBottom}</span>
