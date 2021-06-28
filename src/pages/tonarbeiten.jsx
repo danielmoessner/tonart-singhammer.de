@@ -47,7 +47,7 @@ function Page({ data }) {
                       onClick={() => setShown(piece.title)}
                       type="button"
                     >
-                      <span className="sr-only">Open</span>
+                      <span className="sr-only">Öffnen</span>
                     </button>
                   </div>
                   <div className="mt-1">
@@ -80,7 +80,7 @@ function Page({ data }) {
           </div>
           <div className="absolute top-0 right-0 z-20">
             <button
-              className="p-2 bg-adobe-1 text-gray-050 hover:bg-adobe-4 hover:text-white focus:outline-none"
+              className="p-2 bg-adobe-3 text-gray-050 hover:bg-adobe-4 hover:text-white focus:outline-none"
               onClick={() => setShown('')}
               type="button"
             >
