@@ -288,6 +288,7 @@ export const query = graphql`
               gatsbyImageData
             }
           }
+          description
         }
       }
       order {

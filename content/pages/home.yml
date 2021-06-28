@@ -29,17 +29,17 @@ about:
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
         impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
         ratione.
-      title: Überschrift
+      title: Überschrift 1
     - text: >
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
         impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
         ratione.
-      title: Überschrift
+      title: Überschrift 2
     - text: >
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
         impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
         ratione.
-      title: Überschrift
+      title: Überschrift 3
 work:
   image: ../media/gallerie_1.jpg
   images:
