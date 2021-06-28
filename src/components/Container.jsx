@@ -11,7 +11,7 @@ function Container({ children, layout }) {
   } else if (layout === 'lg') {
     maxWidth = 'max-w-8xl';
   }
-  return <div className={`${maxWidth} mx-auto px-3 sm:px-6 lg:px-8`}>{children}</div>;
+  return <div className={`${maxWidth} mx-auto px-5 sm:px-6 lg:px-8`}>{children}</div>;
 }
 
 Container.defaultProps = {
