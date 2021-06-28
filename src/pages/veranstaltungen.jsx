@@ -26,7 +26,7 @@ function Page({ data }) {
       <Header header={page.header} />
 
       <section className="bg-white py-32">
-        <Container>
+        <Container layout="sm">
           <div>
             <Pre color="text-adobe-5">{page.events.pre}</Pre>
             <Heading tag="h2" size="h2" color="text-adobe-5">
@@ -82,7 +82,7 @@ function Page({ data }) {
       </section>
 
       <section id="anmelden" className="bg-white pb-40">
-        <Container>
+        <Container layout="sm">
           <div>
             <Pre color="text-adobe-5">{page.registration.pre}</Pre>
             <Heading tag="h2" size="h2" color="text-adobe-5">
