@@ -6,11 +6,40 @@ meta:
   image: ../media/DSC_6563B.jpg
 header:
   image: ../media/DSC_6563B.jpg
-  pre: Pre
-  title: Title
-  text: Text
+  pre: Brunhilde Singhammer
+  title: Gestalten mit Ton
+  text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias dolor
+    libero unde dignissimos at placeat.
+  buttonLeft:
+    button: Zu den Projekten
+    internalLink: /tonarbeiten/
+  buttonRight:
+    button: Mehr über mich
+    internalLink: /ueber-mich/
 about:
   image: ../media/DSC_6574B.jpg
+  pre: Brunhilde Singhammer
+  title: Mehr über mich
+  text: >+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda
+    quia repudiandae veritatis ea rerum ut!
+
+  content:
+    - text: >
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+        impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
+        ratione.
+      title: Überschrift
+    - text: >
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+        impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
+        ratione.
+      title: Überschrift
+    - text: >
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+        impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
+        ratione.
+      title: Überschrift
 work:
   image: ../media/gallerie_1.jpg
   images:
@@ -22,3 +51,20 @@ work:
       description: Arbeit 3
 order:
   image: ../media/gallerie_1.jpg
+  pre: AUFTRAGSARBEITEN
+  title: Erinnerungsgefäße
+  text: Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in
+    viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis
+    amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer
+    quis. Eu vulputate diam sit tellus quis at.
+  button: Zu den Erinnerungsgefäßen
+events:
+  pre: Veranstaltungen
+  title: Anstehende Veranstaltungen
+  text: Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
+    sit morbi lobortis. Blandit aliquam sit nisl euismod mattis in.
+cta:
+  textTop: Auf der Suche nach einer Tonarbeit?
+  textBottom: Ich freue mich auf Ihre Anfrage
+  button: Jetzt Kontakt aufnehmen
+  internalLink: /kontakt/

@@ -1,5 +1,7 @@
 import meta from '../symbols/meta';
 import header from '../symbols/header';
+import home from './home';
+import about from './about';
 
 export default [
   {
@@ -11,118 +13,8 @@ export default [
       preview: false,
     },
     files: [
-      {
-        file: 'content/pages/home.yml',
-        label: 'Startseite',
-        name: 'home',
-        fields: [
-          {
-            label: 'Sammlung',
-            name: 'collection',
-            widget: 'hidden',
-            default: 'page',
-          },
-          {
-            label: 'Slug',
-            name: 'slug',
-            widget: 'hidden',
-            default: 'home',
-          },
-          meta,
-          header,
-          {
-            label: 'Über mich',
-            name: 'about',
-            widget: 'object',
-            fields: [
-              {
-                label: 'Bild',
-                name: 'image',
-                widget: 'image',
-              },
-            ],
-          },
-          {
-            label: 'Meine Arbeiten',
-            name: 'work',
-            widget: 'object',
-            fields: [
-              {
-                label: 'Bild',
-                name: 'image',
-                widget: 'image',
-              },
-              {
-                label: 'Bilder',
-                name: 'images',
-                widget: 'list',
-                fields: [
-                  {
-                    label: 'Bild',
-                    name: 'image',
-                    widget: 'image',
-                  },
-                  {
-                    label: 'Beschreibung',
-                    name: 'description',
-                    widget: 'string',
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            label: 'Auftragsarbeiten',
-            name: 'order',
-            widget: 'object',
-            fields: [
-              {
-                label: 'Bild',
-                name: 'image',
-                widget: 'image',
-              },
-            ],
-          },
-        ],
-      },
-      {
-        file: 'content/pages/about.md',
-        label: 'Über mich',
-        name: 'about',
-        fields: [
-          {
-            label: 'Sammlung',
-            name: 'collection',
-            widget: 'hidden',
-            default: 'page',
-          },
-          {
-            label: 'Slug',
-            name: 'slug',
-            widget: 'hidden',
-            default: 'about',
-          },
-          meta,
-          header,
-          {
-            label: 'Inhalt',
-            name: 'content',
-            widget: 'object',
-            fields: [
-              {
-                label: 'Bild',
-                name: 'image',
-                widget: 'image',
-              },
-            ],
-          },
-          {
-            label: 'Inhalt',
-            name: 'body',
-            widget: 'markdown',
-          },
-        ],
-      },
+      home,
+      about,
       {
         file: 'content/pages/work.yml',
         label: 'Tonarbeiten',

@@ -9,7 +9,9 @@ header:
   pre: Über mich
   title: Brunhilde Singhammer
   image: ../media/DSC_6575B.jpg
-  text: Kurzbeschreibung über mich
+  text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna
+    sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat
+    arcu morbi.
 content:
   image: ../media/DSC_6568B.jpg
 ---

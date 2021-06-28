@@ -19,16 +19,15 @@ function Page({ data }) {
         description={page.meta.description}
         image={page.meta.image.childImageSharp.resize.src}
       />
-      {/* <Header header={page.header} /> */}
       <section className="bg-white">
         <div className="bg-white overflow-hidden">
           <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <div className="hidden lg:block bg-yellow-050 absolute top-0 bottom-0 left-3/4 w-screen" />
             <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
               <div>
-                <Pre color="">Über mich</Pre>
+                <Pre color="">{page.header.pre}</Pre>
                 <Heading size="h2" tag="h2" color="">
-                  Brunhilde Singhammer
+                  {page.header.title}
                 </Heading>
               </div>
             </div>
@@ -74,7 +73,7 @@ function Page({ data }) {
                       <div className="rounded-lg overflow-hidden">
                         <GatsbyImage
                           className="block"
-                          image={page.content.image.childImageSharp.gatsbyImageData}
+                          image={page.header.image.childImageSharp.gatsbyImageData}
                           alt={page.meta.title}
                           objectFit="cover"
                           objectPosition="center"
@@ -86,11 +85,7 @@ function Page({ data }) {
               </div>
               <div className="mt-8 lg:mt-0">
                 <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                  <Post color="">
-                    Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
-                    consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu
-                    morbi.
-                  </Post>
+                  <Post color="">{page.header.text}</Post>
                 </div>
                 <div className="mt-5 prose prose-indigo text-gray-0500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                   <p>
