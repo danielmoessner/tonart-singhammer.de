@@ -2,6 +2,7 @@ import meta from '../symbols/meta';
 import header from '../symbols/header';
 import home from './home';
 import about from './about';
+import order from './order';
 
 export default [
   {
@@ -36,39 +37,7 @@ export default [
           header,
         ],
       },
-      {
-        file: 'content/pages/order.yml',
-        label: 'Auftragsarbeiten',
-        name: 'order',
-        fields: [
-          {
-            label: 'Sammlung',
-            name: 'collection',
-            widget: 'hidden',
-            default: 'page',
-          },
-          {
-            label: 'Slug',
-            name: 'slug',
-            widget: 'hidden',
-            default: 'order',
-          },
-          meta,
-          header,
-          {
-            label: 'Auftragsarbeiten',
-            name: 'order',
-            widget: 'object',
-            fields: [
-              {
-                label: 'Inhalt',
-                name: 'content',
-                widget: 'markdown',
-              },
-            ],
-          },
-        ],
-      },
+      order,
       {
         file: 'content/pages/event.yml',
         label: 'Veranstaltungen',

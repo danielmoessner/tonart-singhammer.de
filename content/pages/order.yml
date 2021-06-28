@@ -10,7 +10,6 @@ header:
   text: lorem ipsum dolor sit amet, te dolor di dadidum de dadurum da tore.
   image: ../media/DSC_9694B.jpg
 order:
-  content: |-
-    ## Heading
-
-    text text
+  ctaButton:
+    button: Jetzt anfragen
+    internalLink: /kontakt/

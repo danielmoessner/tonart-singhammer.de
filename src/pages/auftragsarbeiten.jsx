@@ -48,7 +48,9 @@ function Page({ data }) {
                     dangerouslySetInnerHTML={{ __html: service.html }}
                   />
                   <div className="mt-8 inline-flex rounded-md shadow">
-                    <Button>Jetzt anfragen</Button>
+                    <Button to={page.order.ctaButton.internalLink}>
+                      {page.order.ctaButton.button}
+                    </Button>
                   </div>
                 </div>
               </Container>
@@ -74,6 +76,12 @@ export const query = graphql`
     pagesYaml(slug: { eq: "order" }) {
       ...meta
       ...header
+      order {
+        ctaButton {
+          button
+          internalLink
+        }
+      }
     }
     allMarkdownRemark(
       filter: { frontmatter: { collection: { eq: "service" } } }
