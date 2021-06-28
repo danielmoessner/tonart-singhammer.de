@@ -3,9 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import Seo from '../components/Seo';
-// import { Link, graphql } from 'gatsby';
-// import { Transition } from '@headlessui/react';
-// import Container from '../components/Container';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 

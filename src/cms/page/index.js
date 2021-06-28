@@ -4,6 +4,7 @@ import home from './home';
 import about from './about';
 import order from './order';
 import events from './events';
+import contact from './contact';
 
 export default [
   {
@@ -61,27 +62,7 @@ export default [
           header,
         ],
       },
-      {
-        file: 'content/pages/contact.yml',
-        label: 'Kontakt',
-        name: 'contact',
-        fields: [
-          {
-            label: 'Sammlung',
-            name: 'collection',
-            widget: 'hidden',
-            default: 'page',
-          },
-          {
-            label: 'Slug',
-            name: 'slug',
-            widget: 'hidden',
-            default: 'contact',
-          },
-          meta,
-          header,
-        ],
-      },
+      contact,
       {
         file: 'content/pages/imprint.md',
         label: 'Impressum',

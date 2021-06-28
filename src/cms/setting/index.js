@@ -40,6 +40,11 @@ export default {
           name: 'email',
           widget: 'string',
         },
+        {
+          label: 'Adresse',
+          name: 'address',
+          widget: 'text',
+        },
       ],
     },
   ],

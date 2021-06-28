@@ -9,3 +9,11 @@ header:
   title: Ich freue mich auf Ihre Nachricht
   text: Schreiben Sie mir ganz einfach eine E-Mail oder rufen Sie mich an.
   image: ../media/DSC_5388B.jpg
+contact:
+  textContact: Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
+    massa dictumst amet. Sapien tortor lacus arcu.
+  titleContact: Kontaktdaten
+  textAddress: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+    repellat error corporis doloribus similique, voluptatibus numquam quam, quae
+    officiis facilis.
+  titleAddress: Adresse
