@@ -3,6 +3,7 @@ import header from '../symbols/header';
 import home from './home';
 import about from './about';
 import order from './order';
+import events from './events';
 
 export default [
   {
@@ -38,27 +39,7 @@ export default [
         ],
       },
       order,
-      {
-        file: 'content/pages/event.yml',
-        label: 'Veranstaltungen',
-        name: 'event',
-        fields: [
-          {
-            label: 'Sammlung',
-            name: 'collection',
-            widget: 'hidden',
-            default: 'page',
-          },
-          {
-            label: 'Slug',
-            name: 'slug',
-            widget: 'hidden',
-            default: 'event',
-          },
-          meta,
-          header,
-        ],
-      },
+      events,
       {
         file: 'content/pages/technique.yml',
         label: 'Töpfertechniken',

@@ -4,9 +4,6 @@ import PropTypes from 'prop-types';
 import { CalendarIcon, LocationMarkerIcon } from '@heroicons/react/solid';
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 import Seo from '../components/Seo';
-// import { Link, graphql } from 'gatsby';
-// import { Transition } from '@headlessui/react';
-// import Container from '../components/Container';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Container from '../components/Container';
@@ -17,6 +14,7 @@ import Post from '../components/Post';
 function Page({ data }) {
   const page = data.pagesYaml;
   const events = data.allEventYaml.nodes;
+  const global = data.settingsYaml;
 
   return (
     <Layout>
@@ -30,15 +28,12 @@ function Page({ data }) {
       <section className="bg-white py-32">
         <Container>
           <div>
-            <Pre color="text-adobe-5">Veranstaltungen</Pre>
+            <Pre color="text-adobe-5">{page.events.pre}</Pre>
             <Heading tag="h2" size="h2" color="text-adobe-5">
-              Anstehende Veranstaltungen
+              {page.events.title}
             </Heading>
             <div className="mt-4 max-w-3xl">
-              <Post color="text-adobe-5">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
-                lobortis. Blandit aliquam sit nisl euismod mattis in.
-              </Post>
+              <Post color="text-adobe-5">{page.events.text}</Post>
             </div>
           </div>
           <div className="overflow-hidden mt-12">
@@ -51,18 +46,14 @@ function Page({ data }) {
                         <Heading element="h3" size="h3" color="text-adobe-5">
                           {event.title}
                         </Heading>
-                        <div className="ml-2 flex-shrink-0 flex">
-                          <p className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-adobe-4 text-yellow-050">
-                            Offen
-                          </p>
-                        </div>
+                        <div className="ml-2 flex-shrink-0 flex" />
                       </div>
                       <div className="mt-2 text-adobe-5">{event.description}</div>
                       <div className="mt-4 sm:flex sm:justify-between">
                         <div className="sm:flex">
                           <p className="flex items-center text-sm text-adobe-5">
                             <CalendarIcon
-                              className="flex-shrink-0 mr-1.5 h-5 w-5 text-adobe-2"
+                              className="flex-shrink-0 mr-1.5 h-5 w-5 text-adobe-5"
                               aria-hidden="true"
                             />
                             {event.start}
@@ -70,7 +61,7 @@ function Page({ data }) {
                           {event.location && (
                             <p className="mt-2 flex items-center text-sm text-adobe-5 sm:mt-0 sm:ml-6">
                               <LocationMarkerIcon
-                                className="flex-shrink-0 mr-1.5 h-5 w-5 text-adobe-2"
+                                className="flex-shrink-0 mr-1.5 h-5 w-5 text-adobe-5"
                                 aria-hidden="true"
                               />
                               {event.location}
@@ -78,7 +69,7 @@ function Page({ data }) {
                           )}
                         </div>
                         <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
-                          <p className="text-adobe-5 hover:underline">Jetzt anmelden</p>
+                          <p className="text-adobe-5 hover:underline">{page.events.button}</p>
                         </div>
                       </div>
                     </div>
@@ -93,15 +84,12 @@ function Page({ data }) {
       <section id="anmelden" className="bg-white pb-40">
         <Container>
           <div>
-            <Pre color="text-adobe-5">Anmelden</Pre>
+            <Pre color="text-adobe-5">{page.registration.pre}</Pre>
             <Heading tag="h2" size="h2" color="text-adobe-5">
-              Ich freue mich auf Ihre Anmeldung
+              {page.registration.title}
             </Heading>
             <div className="mt-4 max-w-3xl">
-              <Post color="text-adobe-5">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
-                lobortis. Blandit aliquam sit nisl euismod mattis in.
-              </Post>
+              <Post color="text-adobe-5">{page.registration.text}</Post>
             </div>
           </div>
           <div className="mt-9">
@@ -110,8 +98,7 @@ function Page({ data }) {
                 <PhoneIcon className="h-6 w-6 text-adobe-5" aria-hidden="true" />
               </div>
               <div className="ml-3 text-base text-adobe-5">
-                <p>+1 (555) 123 4567</p>
-                <p className="mt-1">Mon-Fri 8am to 6pm PST</p>
+                <p>{global.phone}</p>
               </div>
             </div>
             <div className="mt-6 flex">
@@ -119,7 +106,7 @@ function Page({ data }) {
                 <MailIcon className="h-6 w-6 text-adobe-5" aria-hidden="true" />
               </div>
               <div className="ml-3 text-base text-adobe-5">
-                <p>support@example.com</p>
+                <p>{global.email}</p>
               </div>
             </div>
           </div>
@@ -143,6 +130,17 @@ export const query = graphql`
     pagesYaml(slug: { eq: "event" }) {
       ...meta
       ...header
+      events {
+        pre
+        title
+        text
+        button
+      }
+      registration {
+        pre
+        title
+        text
+      }
     }
     allEventYaml {
       nodes {
@@ -154,6 +152,10 @@ export const query = graphql`
         description
         location
       }
+    }
+    settingsYaml(slug: { eq: "global" }) {
+      phone
+      email
     }
   }
 `;

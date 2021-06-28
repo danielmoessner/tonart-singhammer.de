@@ -9,3 +9,16 @@ header:
   title: Was findet demnächst statt
   text: "Ich veranstalte in regelmäßigen Abständen Workshops und Töpferkurse. "
   image: ../media/DSC_5388B.jpg
+events:
+  pre: Veranstaltungen
+  title: Anstehende Veranstaltungen
+  text: >+
+    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit
+    morbi lobortis. Blandit aliquam sit nisl euismod mattis in.
+
+  button: Jetzt anmelden
+registration:
+  pre: ANMELDEN
+  title: Ich freue mich auf Ihre Anmeldung
+  text: Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
+    sit morbi lobortis. Blandit aliquam sit nisl euismod mattis in.
