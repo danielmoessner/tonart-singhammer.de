@@ -7,3 +7,11 @@
 .transition-animate {
   display: block !important;
 }
+
+@layer utilities {
+  @responsive {
+    .column-count-2 {
+      column-count: 2;
+    }
+  }
+}

@@ -28,9 +28,9 @@ function Page({ data }) {
       <>
         {services.map((service) => (
           <section key={service.title}>
-            <div className="py-16 xl:py-36 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
-              <Container>
-                <div className="relative z-10 mb-8 md:mb-2 md:px-6">
+            <div className="py-16 xl:py-36 bg-white overflow-hidden">
+              <Container layout="sm">
+                <div className="relative z-10 mb-8 md:mb-2">
                   <div className="text-base max-w-prose lg:max-w-none">
                     <h2 className="leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
                       {service.pre}
@@ -40,10 +40,9 @@ function Page({ data }) {
                     </p>
                   </div>
                 </div>
-                <div className="relative md:bg-white md:p-6">
+                <div className="relative md:bg-white md:py-6">
                   <article
-                    className="prose w-full prose-indigo prose-lg text-gray-500 lg:max-w-none"
-                    style={{ columnCount: 2 }}
+                    className="prose w-full prose-indigo prose-lg text-gray-500 md:column-count-2 lg:max-w-none"
                     // eslint-disable-next-line react/no-danger
                     dangerouslySetInnerHTML={{ __html: service.html }}
                   />
