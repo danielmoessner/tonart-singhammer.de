@@ -12,7 +12,7 @@ function Component({ header }) {
   return (
     <header className="bg-adobe-5 relative overflow-hidden">
       <Container layout="sm">
-        <div className="md:py-20">
+        <div className="md:py-20 pb-10">
           <div className="grid grid-cols-5">
             <div className="col-span-5 md:col-span-3 md:pl-6 md:pr-10">
               <div className="max-w-lg">
@@ -30,7 +30,7 @@ function Component({ header }) {
               </div>
             </div>
             {header.image && (
-              <div className="col-span-5 md:col-span-2 flex justify-end py-10 md:py-0">
+              <div className="col-span-5 md:col-span-2 flex justify-end pt-10 md:pt-0">
                 <GatsbyImage
                   className="w-full rounded shadow-xl ring-1 ring-black ring-opacity-5 lg:w-auto lg:max-w-none"
                   image={header.image.childImageSharp.gatsbyImageData}
