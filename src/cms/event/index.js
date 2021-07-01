@@ -6,7 +6,6 @@ export default {
     preview: false,
   },
   folder: 'content/event',
-  slug: '{{fields.slug}}',
   extension: 'yml',
   create: true,
   fields: [
@@ -19,11 +18,6 @@ export default {
     {
       label: 'Titel',
       name: 'title',
-      widget: 'string',
-    },
-    {
-      label: 'Slug',
-      name: 'slug',
       widget: 'string',
     },
     {

@@ -3,7 +3,6 @@ export default {
   label: 'Töpfertechniken',
   label_singular: 'Töpfertechnik',
   folder: 'content/technique',
-  slug: '{{fields.slug}}',
   editor: {
     preview: false,
   },
@@ -19,11 +18,6 @@ export default {
     {
       label: 'Titel',
       name: 'title',
-      widget: 'string',
-    },
-    {
-      label: 'Slug',
-      name: 'slug',
       widget: 'string',
     },
     {
