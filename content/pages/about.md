@@ -16,4 +16,4 @@ header:
 content:
   image: ../media/DSC_6568B.jpg
 ---
-> 1. ![Test](../media/DSC_5239B.jpg "Test")
+> 1. ![Test]( "Test")
