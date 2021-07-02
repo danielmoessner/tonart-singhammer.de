@@ -12,7 +12,7 @@ Ultrices ultricies a in odio consequat egestas rutrum. Ut vitae aliquam in ipsum
 * punkt 2
 * test
 
-![Text](../media/DSC_5297B.jpg "Text")
+![Text](../media/gallerie_1.jpg "Text")
 
 Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim eget. Est augue [maecenas](http://127.0.0.1:8000/) risus nulla ultrices congue nunc tortor. Eu leo risus porta integer suspendisse sed sit ligula elit.
 
