@@ -1,9 +1,16 @@
 collection: technique
 title: Rakubrand
 slug: raku
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex
-  obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod
-  quibusdam expedita nemo.
+description: >-
+  Das Gefäß wird zunächst bei 980 Grad in einem Elektrofen vorgebrannt. 
+
+  Eine Rakuglasur wird anschließend aufgetragen. 
+
+  In einem Gasofen werden die Gefäße eingeschichtet und bis zu 900 Grad hoch gebrannt.
+
+  Mit einer speziellen Zange wird das glühende Gefäße in eine Wanne mit Sägespäne gestellt und mit den Spänen überschüttet. Mit einem größeren Metallbehälter z. B. einen Eimer deckt man das Gefäß ab.
+
+  Nach ca. einer halben Stunde entnimmt man das Gefäß und tunkt es in kaltes Wasser. Nach dem Abkühlen wird es mit einem festen Schwamm gereinigt und kann dann das 'Endprodukt bestaunen. Die bei dem Brand entstandenen Risse in der Glasur sind gewollt und zeichnen das Gefäß aus, machen es einzigartig.
 image: ../media/DSC_5259B.jpg
 features:
   - text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
