@@ -21,6 +21,11 @@ export default {
       widget: 'string',
     },
     {
+      label: 'Slug',
+      name: 'slug',
+      widget: 'string',
+    },
+    {
       label: 'Beschreibung',
       name: 'description',
       widget: 'text',
