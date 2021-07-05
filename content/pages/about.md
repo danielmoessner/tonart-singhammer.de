@@ -8,7 +8,7 @@ meta:
 header:
   pre: Über mich
   title: Brunhilde Singhammer
-  image: ../media/DSC_6543B.jpg
+  image: ../media/DSC_6557B.jpg
   text: Seit über 35 Jahren gestalte ich durch meine Hände Gefäße, Skulpturen und
     Objekte. Es ist für mich ein fortlaufender Prozess der eigenen
     Entwicklung.  In jedem Gefäß steckt ein Ausdruck meiner Seele, meinem Sein.
