@@ -1,16 +1,18 @@
 ---
 collection: service
-pre: Ich erstelle Ihnen
+pre: Erinnerungen einen Ausdruck geben
 title: Erinnerungsgefäße
 order: 3
 ---
-## Überschrift
+## Den Erinnerungen einen Ausdruck geben
 
-Ultrices ultricies a in odio consequat egestas rutrum. Ut vitae aliquam in ipsum. Duis nullam placerat cursus risus ultrices nisi, vitae tellus in. Qui non fugiat aut minus aut rerum. Perspiciatis iusto mollitia iste minima soluta id.
+* In Form von einem Gefäß , einer Schale oder Skulptur können Sie der Erinnerung an einen Menschen eine Gestalt geben.
 
-* punkt 
-* punkt 2
-* test
+  * Mit der indianischen Aufbautechnik ist es jedem möglich  ohne Vorkenntnisse die gewünschte Form entstehen zu lassen. 
+
+    * Mit meinem Fachwissen stehe ich einfühlsam und begleitend zur Seite, damit das Objekt die gewünschte Form und Stabilität bekommt.
+
+      * Nach dem Aufbau geht es immer mehr in die Feinarbeit. Die Oberfläche kann durch eine Bemalung, polieren , einritzen oder aufsetzten von Elementen am Ende gestaltet werden.
 
 ![Text](../media/gallerie_1.jpg "Text")
 
