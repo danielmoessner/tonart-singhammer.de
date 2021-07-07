@@ -7,7 +7,13 @@ meta:
 header:
   pre: Veranstaltugen
   title: Was findet demnächst statt
-  text: "Ich veranstalte in regelmäßigen Abständen Workshops und Töpferkurse. "
+  text: >+
+    Ich biete Töpferkurse und Einzelstunden an. 
+
+    Für Gruppen ist es möglich einen Tag zu buchen, um gemeinsam mit Ton zu gestalten. Dafür eignen sich Betriebsausflüge oder eine Geburtstagsfeier.
+
+    Sie können in meine angemietete Werkstatt kommen oder ich fahre mit meinem Material zu einem geeigneten Ort Ihrer Wahl.
+
   image: ../media/img_8605.jpg
 events:
   pre: Veranstaltungen
