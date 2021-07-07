@@ -11,8 +11,7 @@ header:
   image: ../media/DSC_6557B.jpg
   text: Seit über 35 Jahren gestalte ich durch meine Hände Gefäße, Skulpturen und
     Objekte. Es ist ein fortlaufender Prozess meiner Entwicklung.  In jedem
-    Gefäß steckt ein Ausdruck meiner Seele, meinem Sein. Das Erschaffene wirkt
-    für sich.
+    Gefäß steckt ein Ausdruck meiner Seele, meinem Sein. Das Erschaffene wirkt.
 content:
   image: ../media/DSC_6568B.jpg
 ---
