@@ -1,10 +1,10 @@
 ---
 collection: service
-pre: Erinnerungen einen Ausdruck geben
+pre: Den Erinnerungen einen Ausdruck geben
 title: Erinnerungsgefäße
 order: 3
 ---
-## Den Erinnerungen einen Ausdruck geben
+## Der Gestaltungsprozess
 
 * In Form von einem Gefäß , einer Schale oder Skulptur können Sie der Erinnerung an einen Menschen eine Gestalt geben.
 
