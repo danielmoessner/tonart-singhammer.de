@@ -66,10 +66,12 @@ order:
   image: ../media/gallerie_1.jpg
   pre: AUFTRAGSARBEITEN
   title: Erinnerungsgefäße
-  text: Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in
-    viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis
-    amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer
-    quis. Eu vulputate diam sit tellus quis at.
+  text: >
+    Erinnerungsgefäße sind immer ein Teil der Vergangenheit.
+
+    Sie dienen dazu sich an eine bestimmte Zeit zu erinnern. Eine Zeit an einem bestimmten Ort, einer anderen Vergangenheit, an Menschen, an Stimmungen.
+
+    Sie entstehen bewusst oder unbewusst und sind Zeugnis eines Zusatandes, einer Empfindung.
   button: Zu den Erinnerungsgefäßen
 events:
   pre: Veranstaltungen
