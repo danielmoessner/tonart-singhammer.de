@@ -19,4 +19,4 @@ Eu leo risus porta integer suspendisse sed sit ligula elit. Elit egestas lacinia
 
 Eu eu mauris bibendum scelerisque adipiscing et. Justo, elementum consectetur morbi eros, posuere ipsum tortor. Eget cursus massa sed velit feugiat sed ut. Faucibus eros mauris morbi aliquam nullam. Scelerisque elementum sit magna ullamcorper dignissim pretium.
 
-![Gefäß](../media/IMG_7205.JPG)
+![Gefäß](../media/dsc_0429b.jpg)
