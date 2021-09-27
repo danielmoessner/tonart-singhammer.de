@@ -8,6 +8,7 @@ export default {
   folder: 'content/event',
   extension: 'yml',
   create: true,
+  slug: '{{slug}}',
   fields: [
     {
       label: 'Sammlung',
@@ -19,6 +20,12 @@ export default {
       label: 'Titel',
       name: 'title',
       widget: 'string',
+    },
+    {
+      label: 'Slug',
+      name: 'slug',
+      widget: 'string',
+      hint: 'Zb.: toepferkurs',
     },
     {
       label: 'Anfang',

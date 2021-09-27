@@ -8,55 +8,55 @@ import Layout from '../components/Layout';
 import Pre from '../components/Pre';
 import Heading from '../components/Heading';
 import Button from '../components/Button';
-import DynamicForm from '../components/DynamicForm';
+// import DynamicForm from '../components/DynamicForm';
 
 function Page({ data }) {
   const page = data.pagesYaml;
 
   const headingText = 'Lorem ipsum dolor sit';
 
-  const fields = [
-    {
-      label: 'Vorame',
-      name: 'vorname',
-      value: 'Max',
-    },
-    {
-      label: 'Nachname',
-      name: 'nachname',
-    },
-    {
-      label: 'E-Mail',
-      name: 'email',
-      type: 'email',
-      className: 'sm:col-span-2',
-      placeholder: 'meine-tolle-email@meine-domain.de',
-    },
-    {
-      label: 'Kategorie',
-      name: 'kategorie',
-      element: 'select',
-      className: 'sm:col-span-2',
-      children: [
-        <option key="1" value="auftrag">
-          Auftrag
-        </option>,
-        <option key="2" value="frage">
-          Frage
-        </option>,
-      ],
-    },
-    {
-      label: 'Nachricht',
-      name: 'nachricht',
-      element: 'textarea',
-      required: false,
-      className: 'sm:col-span-2',
-      attrs: {
-        rows: 3,
-      },
-    },
-  ];
+  // const fields = [
+  //   {
+  //     label: 'Vorame',
+  //     name: 'vorname',
+  //     value: 'Max',
+  //   },
+  //   {
+  //     label: 'Nachname',
+  //     name: 'nachname',
+  //   },
+  //   {
+  //     label: 'E-Mail',
+  //     name: 'email',
+  //     type: 'email',
+  //     className: 'sm:col-span-2',
+  //     placeholder: 'meine-tolle-email@meine-domain.de',
+  //   },
+  //   {
+  //     label: 'Kategorie',
+  //     name: 'kategorie',
+  //     element: 'select',
+  //     className: 'sm:col-span-2',
+  //     children: [
+  //       <option key="1" value="auftrag">
+  //         Auftrag
+  //       </option>,
+  //       <option key="2" value="frage">
+  //         Frage
+  //       </option>,
+  //     ],
+  //   },
+  //   {
+  //     label: 'Nachricht',
+  //     name: 'nachricht',
+  //     element: 'textarea',
+  //     required: false,
+  //     className: 'sm:col-span-2',
+  //     attrs: {
+  //       rows: 3,
+  //     },
+  //   },
+  // ];
 
   return (
     <Layout>
@@ -141,9 +141,7 @@ function Page({ data }) {
         </div>
         <div className="">
           <Pre element="h2">Formulare</Pre>
-          <div className="mt-8 space-y-8">
-            <DynamicForm fields={fields} />
-          </div>
+          <div className="mt-8 space-y-8">{/* <DynamicForm fields={fields} /> */}</div>
         </div>
       </div>
     </Layout>

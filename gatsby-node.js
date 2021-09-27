@@ -29,3 +29,20 @@
 //     });
 //   });
 // };
+
+exports.sourceNodes = ({ actions }) => {
+  actions.createTypes(`
+
+    # events should be optional
+    type eventYaml implements Node @infer {
+      collection: String
+      title: String
+      slug: String
+      start: Date @dateformat
+      end: Date @dateformat
+      location: String
+      description: String
+    }
+
+  `);
+};

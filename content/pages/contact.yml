@@ -2,7 +2,8 @@ collection: page
 slug: contact
 meta:
   title: Kontakt
-  description: beschr
+  description: Ich freue mich auf Ihre Nachricht. Schreiben Sie mir ganz einfach
+    eine E-Mail oder rufen Sie mich an.
   image: ../media/DSC_5283B.jpg
 header:
   pre: Kontakt
@@ -10,10 +11,8 @@ header:
   text: Schreiben Sie mir ganz einfach eine E-Mail oder rufen Sie mich an.
   image: ../media/DSC_6572B.jpg
 contact:
-  textContact: Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-    massa dictumst amet. Sapien tortor lacus arcu.
+  textContact: Rufen Sie mich einfach an oder schreiben Sie mir eine E-Mail. Ich
+    freue mich auf Ihre Nachricht.
   titleContact: Kontaktdaten
-  textAddress: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
-    repellat error corporis doloribus similique, voluptatibus numquam quam, quae
-    officiis facilis.
+  textAddress: Hier finden Sie mich.
   titleAddress: Adresse

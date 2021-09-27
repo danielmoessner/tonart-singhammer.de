@@ -11,4 +11,9 @@ order: 3
 * Damit das Objekt die gewünschte Form und Stabilität bekommt, stehe ich mit meinem Fachwissen einfühlsam und begleitend zur Seite. 
 * Nach dem Aufbau geht es in die Feinarbeit. Die Oberfläche kann durch eine Bemalung, polieren,  einritzen oder aufsetzen von Elementen gestaltet werden.
 
+&nbsp;\
+\
+\
+&nbsp;
+
 ![Text](../media/gallerie_1.jpg "Text")

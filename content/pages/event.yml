@@ -2,7 +2,12 @@ collection: page
 slug: event
 meta:
   title: Veranstaltungen
-  description: beschr
+  description: Ich biete Töpferkurse und Einzelstunden an. Für Gruppen ist es
+    möglich einen Tag, Wochenende oder eine Woche zu buchen. Es eignen sich
+    Betriebsausflüge, Geburtstagsfeiern oder einfach einen schönen Tag mit
+    Freundinnen, Freunde, Familie. Sie können in meine angemietete Werkstatt
+    kommen. Mobil fahre ich auch im Umkreis von ca. 50 Kilometer an einen
+    geeigneten Ort Ihrer Wahl.
   image: ../media/DSC_5283B.jpg
 header:
   pre: Veranstaltugen
@@ -18,10 +23,9 @@ header:
 events:
   pre: Veranstaltungen
   title: Anstehende Veranstaltungen
-  text: >+
-    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit
-    morbi lobortis. Blandit aliquam sit nisl euismod mattis in.
-
+  text: >
+    Im Moment sind keine Veranstaltungen aktiv geplant. Melden Sie sich gerne
+    bei mir falls Sie eine Veranstaltung buchen wollen.
   button: Jetzt anmelden
 registration:
   pre: ANMELDEN

@@ -6,16 +6,4 @@ order: 1
 ---
 ![Gefäß](../media/dsc_0431b.jpg)
 
-
-
-
-
-
-
-
-
-
-
-
-
-\
+![](../media/dsc_0472b.jpg)
