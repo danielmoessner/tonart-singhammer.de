@@ -4,7 +4,7 @@ meta:
   title: Veranstaltungen
   description: >
     Ich biete Töpferkurse und Einzelstunden an. Für Gruppen ist es möglich,
-    einen Tag, Wochenende oder eine Woche zu buchen. Es eignen sich
+    einen Tag, ein Wochenende oder eine Woche zu buchen. Es eignen sich
     Betriebsausflüge, Geburtstagsfeiern oder einfach einen schönen Tag mit
     Freundinnen, Freunde, Familie.  In einer angemieteten Werkstatt ist für ca.
     10 Personen Platz. Im Umkreis von ca. 50 Kilometer komme ich mit Material an
@@ -14,15 +14,13 @@ meta:
 header:
   pre: Veranstaltugen
   title: Was findet demnächst statt
-  text: >
-    Ich biete Töpferkurse und Einzelstunden an. Für Gruppen ist es möglich einen
-    Tag, Wochenende oder eine Woche zu buchen. Es eignen sich Betriebsausflüge,
-    Geburtstagsfeiern oder einfach einen schönen Tag mit Freundinnen, Freunde,
-    Familie.  In einer angemieteten Werkstatt ist für ca. 10 Personen Platz. Im
-    Umkreis von ca. 50 Kilometer komme ich mit Material an einen geeigneten Ort
-    Ihrer Wahl. Die Gefäße werden anschließend in der Werkstatt getrocknet und
-    gebrand. Es werden immer zwei Termine für das Herstellen und Glasieren
-    ausgemacht.
+  text: "Ich biete Töpferkurse und Einzelstunden an. Für Gruppen ist es möglich
+    einen Tag, ein Wochenende oder eine Woche zu buchen. Es eignen sich
+    Betriebsausflüge, Geburtstagsfeiern oder einfach einen schönen Tag mit
+    Freundinnen, Freunde, Familie.  In einer angemieteten Werkstatt ist für ca.
+    10 Personen Platz. Im Umkreis von ca. 50 Kilometer komme ich mit Material an
+    einen geeigneten Ort Ihrer Wahl. Die Gefäße werden anschließend in der
+    Werkstatt getrocknet und gebrannt. "
   image: ../media/img_8606.jpg
 events:
   pre: Veranstaltungen
