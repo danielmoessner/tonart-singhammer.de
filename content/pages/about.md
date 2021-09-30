@@ -17,4 +17,4 @@ header:
 content:
   image: ../media/DSC_6568B.jpg
 ---
-![Test](../media/gallerie_10.jpg "Test")
+![Test](../media/dsc_0495b2.jpg "Test")
