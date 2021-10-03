@@ -2,8 +2,8 @@ collection: page
 slug: contact
 meta:
   title: Kontakt
-  description: Ich freue mich auf Ihre Nachricht. Schreiben Sie mir ganz einfach
-    eine E-Mail oder rufen Sie mich an.
+  description: Ich freue mich auf Ihre Nachricht. Schreiben Sie mir eine E-Mail
+    oder rufen Sie mich an.
   image: ../media/DSC_5283B.jpg
 header:
   pre: Kontakt
