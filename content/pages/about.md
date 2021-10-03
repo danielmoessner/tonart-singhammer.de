@@ -4,8 +4,8 @@ slug: about
 meta:
   title: Über mich
   description: Seit über 35 Jahren forme ich durch meine Hände Gefäße, Skulpturen
-    und Objekte. Es ist ein fortlaufender Prozess meiner Entwicklung. In jedem
-    Gefäß steckt ein Ausdruck meiner Seele, meines Seins. Das Erschaffene wirkt.
+    und Objekte. In jedem Gefäß steckt ein Ausdruck meiner Seele, meines Seins.
+    Das Erschaffene wirkt.
   image: ../media/DSC_5283B.jpg
 header:
   pre: Über mich
