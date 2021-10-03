@@ -26,9 +26,11 @@ function Page({ data }) {
       />
       <Header header={page.header} />
       <>
-        {services.map((service) => (
+        {services.map((service, index) => (
           <section key={service.title}>
-            <div className="py-16 xl:py-36 bg-white overflow-hidden">
+            <div
+              className={`py-16 xl:py-36 bg-white overflow-hidden ${index === 1 ? '!pt-0' : ''}`}
+            >
               <Container layout="sm">
                 <div className="relative z-10 mb-8 md:mb-2">
                   <div className="text-base max-w-prose lg:max-w-none">
