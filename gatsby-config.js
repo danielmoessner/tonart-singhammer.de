@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://gatsby-netlifycms.tortuga-webdesign.de',
+    siteUrl: 'https://www.tonart-singhammer.de',
   },
   plugins: [
     'gatsby-plugin-eslint',
